@@ -1,0 +1,891 @@
+
+$width-phone: 480px
+$width-pad: 991px
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
+
+body
+  padding-top: 264px
+  font-family: Helvetica, 'Noto Sans TC', Verdana, "Helvetica Neue", Arial, "微軟正黑體", sans-serif
+input,button,a,a:focus,div
+  outline: none
+.float-padding
+  padding-top: 100px
+@media screen and (max-width: $width-pad)
+  body
+    padding-top: 100px
+@media screen and (max-width: $width-phone)
+  body
+    padding-top: 50px
+@media screen and (max-width: 320px)
+  body
+    width: 320px
+
+::-webkit-scrollbar-track
+  border-radius: 15px
+  border: 1px solid #e5e5e5
+  background-color: #fff
+
+::-webkit-scrollbar
+  width: 11px
+  background-color: #fff
+
+::-webkit-scrollbar-thumb
+  border-radius: 15px
+  border: 1px solid #e5e5e5
+  background-color: #e5e5e5
+
+
+//回頂端
+.go-top
+  width: 30px
+  position: fixed
+  top: 550px
+  right: 270px
+  z-index: 1010
+  display: none
+  .go-top-button
+    width: 100%
+    padding: 0
+    outline: none
+    border: none
+    background: none
+    .go-top-image
+      width: 100%
+      display: none
+    .web-top-image
+      width: 100%
+@media screen and (max-width: 1800px)
+  .go-top
+    right: 50px
+@media screen and (max-width: $width-pad)
+  .go-top
+    width: 80px
+    top: auto
+    bottom: 50px
+    right: 27px
+    display: block
+    .go-top-button
+      .go-top-image
+        display: block
+      .web-top-image
+        display: none
+@media screen and (max-width: $width-phone)
+  .go-top
+    width: 60px
+    right: 20px
+    bottom: 70px
+
+
+//客服
+.service
+  position: fixed
+  bottom: 0
+  right: 25px
+  z-index: 1020
+  display: none
+  .service-block
+    margin-top: 15px
+    padding: 15px 25px
+    cursor: pointer
+    border-radius: 5px 5px 0 0
+    font-size: 16px
+    background: #aaba3d
+    color: #fff
+    .arrow
+      width: 16px
+      margin: 10px 0
+      float: right
+
+
+//購物清單
+.shoppingCart-list
+  width: 278px
+  padding-top: 33px
+  position: fixed
+  top: 62px
+  right: 29px
+  z-index: 1020
+  display: none
+  border-radius: 5px
+  box-shadow: 0px 0px 8px 2px rgba(20%,20%,40%,0.2)
+  background: #fff
+  .product-block
+    max-height: 245px
+    margin-bottom: 10px
+    overflow-y: auto
+    .product
+      margin: 0 10px 21px 10px 
+      overflow: auto
+      .product-image
+        width: 63px
+        height: 63px
+      .title
+        margin-bottom: 10px
+        font-size: 16px
+        font-weight: 300
+        color: #484848
+      .price
+        font-size: 12px
+        color: #a0a0a0
+  .total
+    margin: 0 25px 
+    padding: 18px 0
+    text-align: center
+    font-size: 13px
+    font-weight: 100
+    letter-spacing: 1px
+    border-top: 1px solid #e5e5e5
+  .checkout
+    padding: 17px 0
+    display: block
+    text-decoration: none
+    text-align: center
+    font-size: 16px
+    letter-spacing: 1.3px
+    border-radius: 0 0 5px 5px
+    background: #d9bb2c
+    color: #fff
+.top-head-shoppingCart
+  .shoppingCart-list
+    top: 62px
+.float-header-shoppingCart
+  .shoppingCart-list
+    top: 93px
+@media screen and (max-width: $width-pad)
+  .shoppingCart-list
+    padding-top: 15px
+    border-radius: 0
+    right: 0
+    top: 100px
+    .product-block
+      max-height: 220px
+      .product
+        margin: 0 10px 20px 10px 
+    .total
+      margin: 0 
+      padding: 10px 0
+    .checkout
+      padding: 10px 0
+      border-radius: 0
+@media screen and (max-width: $width-phone)
+  .shoppingCart-list
+    width: 100%
+    top: 50px
+
+
+//頂端選單
+.top-head
+  width: 100%
+  padding: 19px 60px
+  position: fixed
+  top: 0
+  z-index: 1020
+  overflow: auto
+  background: #2a2a2a
+  .register
+    margin-left: 45px 
+  .member-function
+    float: right
+    .member-link
+      font-weight: 100
+      letter-spacing: 1.3px
+      font-size: 13px
+      text-decoration: none
+      color: #fff
+      .link-image
+        margin-right: 15px 
+        font-size: 21px
+        color: #fff
+      .icon-signIn
+        font-size: 17px
+        line-height: 1.4
+    .shoppingCart-block
+      position: relative
+      .shoppingCart-number
+        width: auto
+        height: 19px
+        padding: 2px 5px
+        position: absolute
+        top: -10px
+        left: 15px
+        border-radius: 10px
+        text-align: center
+        font-family: Arial
+        font-weight: 300
+        font-size: 12px
+        background: #d9bb2c
+        color: #fff
+@media screen and (max-width: $width-pad)
+  .top-head
+    display: none
+
+
+//選單
+.masthead
+  width: 100%
+  padding-top: 40px
+  position: fixed
+  top: 62px
+  z-index: 1010
+  box-shadow: 0px 0px 10px 0 rgba(20%,20%,40%,0.2)
+  background: #fff
+  .toggle-button
+    display: none
+  .main-logo
+    margin-bottom: 27px
+    text-align: center
+    .phone-logo-image
+      display: none
+  .phone-menu
+    display: none
+  .nav-justified
+    .menu-list
+      a
+        margin: 0 20px
+        padding: 29px 15px 24px 15px
+        font-weight: 300
+        letter-spacing: 2.9px
+        font-size: 16px
+        font-weight: 300
+        background: none
+        color: #2a2a2a
+      a:before
+        height: 0
+        content: ""
+        position: absolute
+        z-index: -1
+        left: 0
+        right: 0
+        bottom: 0
+        background: #aaba3d
+        -moz-transition: all 0.3s ease-in-out
+        -o-transition: all 0.3s ease-in-out
+        -webkit-transition: all 0.3s ease-in-out
+        transition: all 0.3s ease-in-out
+      a:hover:before
+        height: 5px
+      a:active,a:focus
+        background: none
+      .search
+        text-align: center
+        position: relative
+        .search-button
+          width: 16px
+          height: 16px
+          left: 45px
+          position: absolute
+          top: 6px
+          outline: none
+          background: none
+          border: none
+          background-color: #fff
+          color: #5e5e5e
+          .search-image
+            font-size: 16px 
+        .search-input
+          width: 149px
+          padding: 6px 10px 6px 30px
+          text-align: center
+          border-radius: 50px
+          outline: none
+          line-height: 16px
+          font-weight: 300
+          font-size: 13px
+          letter-spacing: 2.3px
+          background: none
+          border: 1px solid #c7c7c7
+    .current-menu-item
+      a:before
+        height: 5px
+@media screen and (max-width: 1200px)
+  .masthead
+    .nav-justified
+      .menu-list
+        a
+          margin: 0 5px
+@media screen and (max-width: $width-pad)
+  .masthead
+    width: 100%
+    height: 100px
+    padding: 25px 0 22px 0
+    top: 0
+    background: #2a2a2a
+    .container
+      width: 100%
+      padding: 0
+    .toggle-button
+      position: absolute
+      left: 47px
+      top: 31px
+      display: block
+      font-size: 37px
+      background: none
+      border: none
+      outline: none
+      color: #fff
+      .phone_remove
+        display: none
+    .main-logo
+      margin-bottom: 0
+      .logo-image
+        display: none
+      .phone-logo-image
+        width: 191px
+        margin: auto
+        display: block
+    .phone-menu
+      display: block
+    .phone-shoppingCart
+      position: absolute
+      right: 55px
+      top: 32px
+      .phone-shoppingCart-link
+        text-decoration: none
+      .shoppingCart-block
+        position: relative
+        .shoppingCart-number
+          width: auto
+          height: 25px
+          padding: 0 7px
+          position: absolute
+          top: -15px
+          left: 30px
+          border-radius: 20px
+          text-align: center
+          font-size: 18px
+          background: #d9bb2c
+          color: #fff
+        .link-image
+          font-size: 37px
+          color: #fff
+    nav
+      width: 100%
+      height: 100%
+      position: fixed
+      top: 100px
+      z-index: 1020
+      display: none
+      background: rgba(170, 186, 61, 0.9)
+    .nav-justified
+      position: absolute
+      top: calc(50% - 370px)
+      .menu-list
+        width: 100%
+        display: block
+        text-align: center
+        a
+          margin: 0
+          padding: 20px 0
+          font-size: 20px
+          color: #fff
+        a:hover:before
+          height: 0
+        .search
+          width: 215px
+          margin: 0 auto
+          padding-top: 30px
+          overflow: auto
+          font-size: 20px
+          .search-button
+            width: 20px
+            height: 20px
+            left: 0
+            top: 50px
+            background: none
+            color: #fff
+            .search-image
+              font-size: 20px
+          .search-input
+            margin-left: 20px
+            padding: 10px 25px
+            font-size: 18px
+            background: none
+            border: none
+            border-radius: 0
+            border-bottom: 2px solid #fff
+            color: #fff
+          ::-webkit-input-placeholder
+            color: #fff
+          ::-moz-placeholder
+            color: #fff
+          input:-ms-input-placeholder 
+            color: #fff
+          :-moz-placeholder 
+            color: #fff
+      .current-menu-item
+        a:before
+          height: 0
+@media screen and (max-width: $width-phone)
+  .masthead
+    height: 50px
+    padding: 10px 0
+    .container
+      width: 100%
+      padding: 0
+    .toggle-button
+      left: 20px
+      top: 12px
+      font-size: 20px
+    .main-logo
+      padding-top: 0
+      .phone-logo-image
+        width: 100px
+    .phone-shoppingCart
+      right: 30px
+      top: 15px
+      .shoppingCart-block
+        .shoppingCart-number
+          height: 20px
+          padding: 0 5px
+          top: -8px
+          left: 12px
+          font-size: 14px
+        .link-image
+          font-size: 20px
+    nav
+      top: 50px
+    .nav-justified
+      top: calc(50% - 223px)
+      .menu-list
+        a
+          padding: 10px 0
+          font-size: 16px
+        .search
+          padding-top: 10px
+          overflow: visible 
+          .search-input
+            font-size: 16px
+          .search-button
+            top: 30px
+
+
+//滾動時的選單
+.float-header
+  width: 100%
+  height: 93px
+  padding-top: 22px
+  position: fixed
+  top: 0
+  z-index: 1020
+  display: none
+  box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+  background: #fff
+  .main-logo
+    text-align: center
+    .logo-image
+      padding-top: 0
+      width: 181px
+  .phone-menu
+    display: none
+  .nav-justified
+    .menu-list
+      a
+        margin: 0 20px
+        padding-top: 10px
+        padding-bottom: 36px
+        font-weight: 100
+        letter-spacing: 2.9px
+        font-size: 16px
+        color: #2a2a2a
+      a:before
+        height: 0
+        content: ""
+        position: absolute
+        z-index: -1
+        left: 0
+        right: 0
+        bottom: -3px
+        background: #aaba3d
+        -moz-transition: all 0.3s ease-in-out
+        -o-transition: all 0.3s ease-in-out
+        -webkit-transition: all 0.3s ease-in-out
+        transition: all 0.3s ease-in-out
+      a:hover:before
+        height: 5px
+      a:hover,a:active,a:focus
+        background: none
+      .search
+        text-align: center
+        position: relative
+        .search-button
+          width: 16px
+          height: 16px
+          left: 45px
+          position: absolute
+          top: 6px
+          outline: none
+          background: none
+          border: none
+          background-color: #fff
+          color: #5e5e5e
+          .search-image
+            font-size: 16px 
+        .search-input
+          width: 149px
+          padding: 6px 10px 6px 30px
+          text-align: center
+          border-radius: 50px
+          outline: none
+          line-height: 16px
+          font-size: 13px
+          font-weight: 300
+          letter-spacing: 2.3px
+          background: none
+          border: 1px solid #c7c7c7
+    .current-menu-item
+      a:before
+        height: 5px
+  .float-header-member
+    .register
+      margin-left: 25px 
+    .member-function
+      padding-top: 10px
+      float: left
+      .member-link
+        font-weight: 100
+        letter-spacing: 1.3px
+        font-size: 13px
+        text-decoration: none
+        color: #2a2a2a
+        .link-image
+          margin-right: 15px 
+          font-size: 21px
+          color: #5e5e5e
+        .icon-signIn
+          font-size: 17px
+          line-height: 1.4
+      .shoppingCart-block
+        position: relative
+        .shoppingCart-number
+          width: auto
+          height: 19px
+          padding: 2px 5px
+          position: absolute
+          top: -10px
+          left: 15px
+          border-radius: 10px
+          text-align: center
+          font-family: Arial
+          font-weight: 300
+          font-size: 12px
+          background: #d9bb2c
+          color: #fff
+@media screen and (max-width: 1700px)
+  .float-header
+    .nav-justified
+      .menu-list
+        a
+          margin: 0 15px
+          padding-left: 10px
+          padding-right: 10px
+@media screen and (max-width: 1510px)
+  .float-header
+    .nav-justified
+      .menu-list
+        a
+          margin: 0 5px
+          padding-left: 5px
+          padding-right: 5px
+    .float-header-member
+      padding: 0
+@media screen and (max-width: 1350px)
+  .float-header
+    .nav-block
+      padding: 0
+    .nav-justified
+      .menu-list
+        a
+          padding-bottom: 39px
+          font-size: 14px
+        .search
+          .search-button
+            left: 40px
+          .search-input
+            width: 130px
+    .float-header-member
+      padding: 0
+      .register
+        margin-left: 10px 
+      .member-function
+        .member-link
+          font-size: 12px
+          .link-image
+            margin-right: 10px
+@media screen and (max-width: 1100px)
+  .float-header
+    .main-logo
+      .logo-image
+        padding-top: 0
+        width: 150px
+    .nav-justified
+      .menu-list
+        a
+          padding-left: 0
+          padding-right: 0
+    .float-header-member
+      .register
+        margin-left: 5px 
+      .member-function
+        .member-link
+          .link-image
+            margin-right: 2px
+@media screen and (max-width: $width-pad)
+  .float-header
+    display: none
+
+
+//Footer
+.footer
+  width: 100%
+  padding: 85px 0
+  background: #2a2a2a
+  .footer-menu
+    overflow: auto
+    .footer-menu-ul
+      padding-left: 0
+      .footer-list
+        display: table-cell
+        border-left: 2px solid #d7d7d7
+        a
+          padding: 0 25px
+          font-weight: 300
+          letter-spacing: 3px
+          font-size: 15px
+          opacity: 1
+          text-decoration: none
+          color: #fff
+        a:hover
+          opacity: 0.7
+      .first-list
+        border-left: none
+        a
+          padding: 0 25px 0 0
+  .row
+    margin: 0 
+    padding-top: 50px
+    .footer-logo
+      padding: 0
+    .footer-information
+      padding-left: 25px
+      color: #fff
+      .title
+        font-size: 18px
+        font-weight: 300
+        letter-spacing: 3.2px
+      .content
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: 2px
+        span
+          padding: 0 29px
+          border-left: 1px solid #fff
+        .first-span
+          padding: 0 29px 0 0
+          border-left: none
+    .subscription
+      text-align: center
+      .subscription-link
+        width: 145px
+        height: 35px
+        margin: 0 auto
+        padding: 8px 0
+        display: block
+        border-radius: 17.5px
+        text-decoration: none
+        font-weight: 100
+        letter-spacing: 2.3px
+        font-size: 13px
+        border: 1px solid #aaba3d
+        color: #aaba3d
+        -moz-transition: all 0.4s ease-in-out
+        -o-transition: all 0.4s ease-in-out
+        -webkit-transition: all 0.4s ease-in-out
+        transition: all 0.4s ease-in-out
+      .subscription-link:hover
+        background: #aaba3d
+        color: #2a2a2a
+      .subscription-link:focus
+        outline: none
+      .footer-share
+        width: 145px
+        margin: auto
+        padding-top: 20px
+        padding-left: 0
+        .share-list
+          padding-left: 10px
+          display: table-cell
+          .share-link
+            text-decoration: none
+            .link-image
+              font-size: 28px
+              opacity: 0.7
+              color: #fff
+          .share-link:hover
+            .link-image
+              opacity: 1
+        .first
+          padding-left: 0
+@media screen and (max-width: 1200px)
+  .footer
+    .footer-menu
+      .footer-menu-ul
+        .footer-list
+          a
+            padding: 0 14px
+        .first-list
+          a
+            padding: 0 14px 0 0
+    .row
+      .footer-logo 
+        .footer-logo-image
+          width: 100%   
+      .footer-information
+        padding-left: 15px
+        .content
+          letter-spacing: 1px
+          span
+            padding: 0 3px
+          .first-span
+            padding: 0 3px 0 0
+        .phone-number
+          span
+            padding: 0 16px
+          .first-span
+            padding: 0 16px 0 0
+      .subscription
+        padding: 0    
+@media screen and (max-width: $width-pad)
+  .footer
+    padding: 80px 0 50px 0
+    .container
+      width: 100%
+    .footer-menu
+      .footer-menu-ul
+        .footer-list
+          width: 1%
+          text-align: center
+          a
+            padding: 0
+            display: block
+    .row
+      padding-top: 20px
+      .footer-logo 
+        margin-bottom: 30px
+        text-align: center
+        .footer-logo-image
+          width: 187px
+      .footer-information
+        padding: 0
+        text-align: center
+      .subscription
+        width: 160px
+        margin: 30px auto 0 auto
+@media screen and (max-width: 700px)
+  .footer
+    .container
+      padding: 0
+    .footer-menu
+      .footer-menu-ul
+        width: 100%
+        padding: 0
+        overflow: auto
+        .footer-list
+          width: 25%
+          margin-bottom: 30px
+          float: left
+          display: block
+          border: none
+    .row
+      padding-top: 10px
+      .footer-information
+        .content
+          span
+            margin-bottom: 10px
+            padding: 0
+            display: block
+            border-left: none
+  
+
+//Footer訂閱我們
+.modal-content
+  border: none
+.footer-subscribe
+  .subscribe-block
+    width: 768px
+    padding: 56px 0
+    position: absolute
+    margin-top: 45%
+    left: calc(50% - 384px)
+    text-align: center
+    border-radius: 5px
+    background: #aaba3d
+    color: #fff
+    .title
+      margin-bottom: 28px
+      letter-spacing: 2.9px
+      font-weight: 300
+      font-size: 24px
+      .en
+        margin-left: 5px 
+        letter-spacing: 1.2px
+        font-size: 24px
+      .symbol
+        margin: -10px 10px 0 10px
+    .sub-title
+      margin-bottom: 29px
+      letter-spacing: 1.7px
+      font-size: 14px 
+    .mail-block
+      width: 380px
+      margin: 0 auto
+      position: relative
+      .es_lablebox,.es_msg
+        display: none
+      .es_textbox_class
+        width: 380px
+        padding: 10px 55px 10px 25px
+        border: none
+        border-radius: 50px 
+        outline: none
+        color: #333
+      .es_button
+        width: 26px
+        height: 20px
+        padding-top: 0
+        padding-bottom: 0
+        position: absolute
+        top: 10px
+        right: 20px
+        z-index: 5
+        opacity: 0
+        .es_textbox_button
+          width: 26px
+          height: 20px
+      .mail-image
+        position: absolute
+        top: 10px
+        right: 20px
+        z-index: 1
+        font-size: 20px
+        color: #aaba3d
+      .mail-image:hover
+        opacity: 0.5
+@media screen and (max-width: $width-pad)
+  .footer-subscribe
+    .subscribe-block
+      width: 100%
+      left: 0
+@media screen and (max-width: $width-phone)
+  .footer-subscribe
+    .subscribe-block
+      .title
+        font-size: 20px
+      .sub-title
+        padding: 0 30px
+        line-height: 25px
+      .mail-block
+        width: 250px
+        .es_textbox_class
+          width: 250px
+

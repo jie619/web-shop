@@ -1,0 +1,680 @@
+/*
+ *  商品頁面CSS
+ */
+
+$width-phone: 480px
+$width-pad: 992px
+
+.carousel 
+  .carousel-inner 
+    .carousel-caption-shop
+      border: 0
+      bottom: 45%
+      .title
+        font-size: 60.2px
+        font-weight: 400
+        text-align: center
+        letter-spacing: 8.4px
+      .content
+        font-size: 30.9px
+        font-weight: 300
+        text-align: center
+        letter-spacing: 5px
+  .carousel-indicators-shop
+    bottom: 90px
+
+
+.product-page
+  margin-top: 50px
+  margin-bottom: 100px
+  clear: both
+  .container
+    width: 1200px
+    @media screen and (max-width: $width-pad)
+      width: 100%
+.product-page-shop
+  margin-top: -70px
+  position: relative
+  z-index: 1000
+  @media screen and (max-width: $width-pad)
+    margin-top: 50px
+
+.product-outer
+  padding-right: 0px
+  padding-left: 0px
+
+.product-sidebar
+  width: 260px
+  float: left
+  box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+  @media screen and (max-width: $width-pad)
+    width: calc(100% - 600px)
+  @media screen and (max-width: $width-phone)
+    width: 100%
+  .widget-all
+    @media screen and (max-width: $width-phone)
+      display: none
+  .widget
+    padding: 20px 35px
+    @media screen and (max-width: $width-pad)
+      padding: 10px
+    @media screen and (max-width: $width-phone)
+      padding: 10px 35px
+    &:last-child
+      border-bottom: 0px solid #FFFFFF
+    .widget-title
+      font-size: 18px
+      text-align: center
+      padding: 10px 0px
+      letter-spacing: 1.8px
+      @media screen and (max-width: $width-phone)
+        margin: 10px 0
+        text-align: left
+    ul
+      padding: 0px
+      margin-bottom: 0px
+      padding-bottom: 35px
+      border-bottom: 1px solid #d2d2d2
+      @media screen and (max-width: $width-phone)
+        padding-bottom: 15px
+      li
+        list-style: none
+        text-align: center
+        font-size: 14px
+        display: block
+        line-height: 2
+        padding: 5px 0px
+        letter-spacing: 1.4px
+        font-weight: 300
+        @media screen and (max-width: $width-phone)
+          margin-right: 10px
+          display: inline
+        a
+          color: #2a2a2a
+          letter-spacing: 1.4px
+          &:hover, &:focus
+            text-decoration: none
+    ul.product-categories
+      li.current-cat
+        a
+          color: #7d7d7d
+  .widget-order
+    padding: 20px
+    background-color: #d9bb2c
+    border-bottom: 0px solid #FFFFFF
+    border-top-left-radius: 5px
+    ul
+      padding: 0px
+      margin: 0
+      @media screen and (max-width: $width-phone)
+        overflow: auto
+      li
+        list-style: none
+        text-align: center
+        font-size: 15px
+        display: block
+        line-height: 41px
+        letter-spacing: 1.5px
+        font-weight: 300
+        @media screen and (max-width: $width-phone)
+          width: 25%
+          float: left
+        a
+          color: #FFFFFF
+          &:hover
+            text-decoration: none
+            color: #f6e7a1
+  .product-tool
+    padding: 20px 35px 0 35px
+    display: none
+    overflow: auto
+    @media screen and (max-width: $width-phone)
+      display: block
+    .product-filter
+      margin-top: 5px
+      float: left
+      .arrow
+        margin-top: 4px
+        margin-left: 5px
+        position: absolute
+        font-size: 6px
+        -ms-transform: rotate(90deg)
+        -webkit-transform: rotate(90deg)
+        transform: rotate(90deg)
+    .open
+      .arrow
+        -ms-transform: rotate(-90deg)
+        -webkit-transform: rotate(-90deg)
+        transform: rotate(-90deg)
+    .search-condition
+      float: right
+      border: 1px solid #c7c7c7
+      border-radius: 50px
+      padding: 5px 10px
+    .search-button
+      background-color: #ffffff
+      border: 0px
+
+.single-product-sidebar
+  @media screen and (max-width: $width-phone)
+    display: block
+
+.product-content
+  max-width: calc(100% - 260px)
+  width: 100%
+  float: left
+  background-color: #ffffff
+  border-top-right-radius: 5px
+  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.1)
+  @media screen and (max-width: $width-pad)
+    max-width: 600px
+
+.search-bar
+  padding: 20px
+  width: 100%
+  overflow: auto
+  clear: both
+  .breadcrumb
+    font-size: 13px
+    letter-spacing: 1.3px
+    background-color: #FFFFFF
+    padding: 5px 15px
+    margin-bottom: 0px
+    float: left
+    font-weight: 300
+    a
+      color: #2a2a2a
+  .search-condition
+    float: right
+    border: 1px solid #c7c7c7
+    border-radius: 50px
+    padding: 4px 10px 4px 25px
+    @media screen and (max-width: $width-phone)
+      display: none
+    form
+      position: relative
+  .search-button
+    background-color: #ffffff
+    border: 0px
+    height: 16px
+    width: 16px
+    position: absolute
+    top: 0
+    left: -20px
+    .search-image 
+      font-size: 16px
+
+input.product-search
+  padding: 0px
+  outline: none
+  width: 120px
+  border: 0px
+  font-size: 13px
+  letter-spacing: 2.3px
+  line-height: 16px
+  text-align: center
+  color: #2a2a2a
+  @media screen and (max-width: $width-phone)
+    width: 80px
+
+::-webkit-input-placeholder
+  color: #2a2a2a
+
+select.orderby
+  padding: 5px 15px
+  color: #2a2a2a
+  border-color: #a0a0a0
+
+
+ul.products
+  padding: 0px
+  margin: 0px
+  overflow: auto
+  padding-bottom: 0
+  @media screen and (max-width: $width-phone)
+    width: 300px
+    margin: 0 auto
+  li
+    list-style: none
+    width: 33.33333%
+    float: left
+    position: relative
+    @media screen and (max-width: $width-pad)
+      width: 50%
+    @media screen and (max-width: $width-phone)
+      width: auto
+    &:hover
+      box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+      .product-buttons
+        opacity: 1
+    img
+      width: 100%
+    a
+      display: block
+      padding: 0px
+      color: transparent
+      &:hover
+        text-decoration: none
+    h2
+      font-size: 16px
+      color: #2a2a2a
+      margin: 0
+      padding: 25px 0px 13px 25px
+      font-weight: 400
+      letter-spacing: 1.9px
+      font-weight: 300
+    .price
+      font-size: 14px
+      color: #2a2a2a
+      padding-left: 25px
+      padding-bottom: 25px
+      display: block
+      letter-spacing: 1.7px
+      font-weight: 300
+      del
+        text-decoration: none
+        span
+          font-size: 12px
+          font-weight: 300
+          letter-spacing: 1.4px
+          text-align: left
+          color: #a0a0a0
+      ins
+        text-decoration: none
+        float: left
+        margin-right: 18px
+    .product-buttons
+      position: absolute
+      top: 0
+      left: 19.3px
+      z-index: 5
+      opacity: 0
+      a
+        padding-bottom: 21px
+
+nav.woocommerce-pagination
+  display: none
+
+
+.addcart-button
+  span
+    font-size: 19px
+    color: #aeaeae
+    background-color: #ffffff
+    text-align: center
+    border-radius: 50%
+    font-weight: 400
+    width: 38px
+    height: 38px
+    display: block
+    line-height: 38px
+    &:before
+      font-family: 'icomoon' !important
+      content: "\e915"
+.added
+  span
+    color: #d9bb2c
+    &:before
+      font-family: 'icomoon' !important
+      content: "\e914"
+
+.addwish-button
+  span
+    font-size: 17.32px
+    color: #aeaeae
+    background-color: #ffffff
+    text-align: center
+    border-radius: 50%
+    font-weight: bold
+    width: 38px
+    height: 38px
+    display: block
+    line-height: 42px
+.addedwish
+  span
+    color: #ff5252
+    
+.yith-wcwl-add-button
+  a 
+    i
+      margin-right: 0
+.yith-wcwl-add-to-wishlist
+  margin-top: 12px
+
+
+.product-tabs
+  ul
+    margin: 0
+    padding: 0
+    overflow: auto
+    li
+      list-style: none
+      float: left
+      text-align: center
+      background-color: #f7f8f8
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
+      a
+        font-size: 15px
+        color: #2a2a2a
+        letter-spacing: 1.5px
+        font-weight: 300
+        width: 186px
+        padding: 20px 10px
+        display: block
+        @media screen and (max-width: $width-phone)
+          width: auto
+        &:hover
+          text-decoration: none
+          color: #2a2a2a
+        &:focus
+          text-decoration: none
+    li.active
+      background-color: #ffffff
+      border: 1px solid #eeeeee
+      border-bottom: 0px
+
+.product-tabs-panel
+  border-radius: 0px
+  box-shadow: initial
+  font-weight: 300
+  border: 1px solid #eeeeee
+  margin-top: -1px
+  padding: 50px
+  line-height: 2.08
+  letter-spacing: 2.1px
+  @media screen and (max-width: $width-phone)
+    padding: 20px
+
+.shop_attributes
+  margin: 0 auto
+  width: 80%
+  @media screen and (max-width: $width-phone)
+    width: 100%
+  tr
+    th
+      padding: 15px 5px
+    td
+      padding: 15px 5px
+      p
+        margin: 0
+        
+
+.product-item
+  margin-bottom: 50px
+  overflow: auto
+  clear: both
+  position: relative
+  padding-left: 38.8px
+  @media screen and (max-width: $width-pad)
+    padding-left: 10px
+  @media screen and (max-width: $width-phone)
+    padding-left: 0px
+  .product-gallery
+    width: 555px
+    float: left
+    @media screen and (max-width: $width-pad)
+      width: 50%
+    @media screen and (max-width: $width-phone)
+      width: 100%
+    .product-gallery-show
+      padding: 0px 20px 20px
+      .gallery-item
+        img
+          width: 100%
+          border-radius: 5px
+    .product-gallery-nav
+      padding: 0 20px
+      .nav-item
+        padding: 5px
+        img
+          width: 100%
+          border-radius: 5px
+  .product-summary
+    width: calc(100% - 555px)
+    float: right
+    padding: 0 0 0 30px
+    @media screen and (max-width: $width-pad)
+      width: 50%    
+    @media screen and (max-width: $width-phone)
+      width: 100%
+  .product-wish
+    position: absolute
+    top: 0
+    left: 60px
+    z-index: 5
+    opacity: 0
+    padding: 11px 19.3px
+    @media screen and (max-width: $width-pad)
+      left: 30px
+    .addwish-button
+      &:hover
+        text-decoration: none
+  &:hover
+    .product-wish
+      opacity: 1
+
+.product-tag
+  height: 50px
+  @media screen and (max-width: $width-pad)
+    height: 0px
+
+.subtitle
+  margin: 0px 0px 10px
+  font-size: 16px
+  color: #aaba3d
+
+.product_title
+  font-size: 24px
+  color: #2a2a2a
+  font-weight: 300
+  letter-spacing: 3.4px
+
+.product_meta
+  font-size: 12px
+  color: #bfbfbf
+  margin-bottom: 30px
+  font-weight: 300
+  letter-spacing: 1.2px
+
+.product-price
+  font-size: 22px
+  color: #2a2a2a
+  letter-spacing: 1.8px
+  del
+    text-decoration: none
+    span
+      font-size: 14px
+      font-weight: 300
+      letter-spacing: 1.1px
+      color: #a0a0a0
+  ins
+    text-decoration: none
+    float: left
+    margin-right: 24px
+
+
+.product-cart
+  padding-top: 30px
+  padding-bottom: 40px
+  border-bottom: 1px solid #c7c7c7
+  margin-right: 30px
+  .quantity
+    display: inline-block
+    margin-right: 30px
+    @media screen and (max-width: $width-pad)
+      margin-right: 0px
+    input
+      border: 1px solid #c7c7c7
+      border-radius: 5px
+      padding: 5px 10px
+      width: 70px
+  .button
+    font-size: 14px
+    padding: 8px 47px
+    background-color: #aaba3d
+    color: #ffffff
+    border-radius: 50px
+    border: 1px solid #aaba3d
+    letter-spacing: 1.7px
+    font-weight: 300
+    &:hover
+      background-color: #ffffff
+      color: #aaba3d
+    @media screen and (max-width: $width-pad)
+      padding: 8px 30px
+
+.product-short-desc
+  padding: 40px 0px
+  margin-right: 30px
+  font-size: 14
+  letter-spacing: 1.4px
+  font-weight: 300
+  p
+    line-height: 2.08
+    letter-spacing: 2.5px
+  ul
+    padding-left: 20px
+    li
+      line-height: 2.5
+      font-size: 14px
+
+.woo-social-buttons
+  float: left
+  .custom
+    &:hover
+      opacity: 0.7
+.line-share
+  float: left
+  margin: 10px 0px
+
+.related-product
+  position: relative
+  h2.related-product-title
+    text-align: center
+    background-color: #aaba3d
+    color: #ffffff
+    font-weight: 300
+    font-size: 18px
+    padding: 20px 0px
+    margin: 0
+    letter-spacing: 1.8px
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+  .prev
+    width: 44px
+    height: 44px
+    position: absolute
+    top: calc(50% - 50px)
+    left: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    border-radius: 50%
+    font-size: 16px
+    cursor: pointer
+    background: #fff
+    color: #a6a6a6
+  .next
+    width: 44px
+    height: 44px
+    position: absolute
+    top: calc(50% - 50px)
+    right: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    border-radius: 50%
+    font-size: 16px
+    cursor: pointer
+    background: #fff
+    color: #a6a6a6
+
+.slick-list
+  padding-bottom: 5px
+
+/**
+ * Widgets
+ */
+.widget_price_filter
+  padding-bottom: 50px
+  .price_slider
+    margin-bottom: 1em
+  .price_slider_amount
+    line-height: 2.4
+    font-size: 13px
+    font-weight: 300
+    position: relative
+    text-align: center
+    @media screen and (max-width: $width-phone)
+      position: relative
+      text-align: left
+    .price_label
+      position: absolute
+      right: 0
+      top: 0
+      width: 100%
+      text-align: center
+      @media screen and (max-width: $width-phone)
+        text-align: left
+    .button
+      padding: 1px 12px
+      background: none
+      border: 1px solid #d2d2d2
+      margin-top: 30px
+      text-align: center
+      @media screen and (max-width: $width-phone)
+        padding: 5px 15px
+  .ui-slider 
+    position: relative
+    text-align: left
+    margin-left: 0.5em
+    margin-right: 0.5em
+    @media screen and (max-width: $width-phone)
+      margin-bottom: 5px
+      margin-left: 0px
+      margin-right: 0px
+
+  .ui-slider 
+    .ui-slider-handle
+      position: absolute
+      z-index: 2
+      width: 19px
+      height: 9px
+      background-color: #d2d2d2
+      border-radius: 1em
+      cursor: ew-resize
+      outline: none
+      top: 0.3em
+      margin-left: 0.3em
+      &:last-child
+        margin-left: -1.7em
+    .ui-slider-range
+      position: absolute
+      z-index: 1
+      font-size: 0.7em
+      display: block
+      border: 0
+      border-radius: 1em
+
+  .price_slider_wrapper 
+    .ui-widget-content
+      border-radius: 1em
+      border: 1px solid #bfbfbf
+      padding: 8px
+      @media screen and (max-width: $width-phone)
+        width: 70%
+
+  .ui-slider-horizontal
+    height: 0.5em
+    .ui-slider-range
+      top: 0
+      height: 100%
+
+  .ui-slider-horizontal 
+    .ui-slider-range-min
+      left: -1px
+    .ui-slider-range-max 
+      right: -1px

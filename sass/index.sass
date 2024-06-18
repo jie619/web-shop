@@ -1,0 +1,562 @@
+
+$width-phone: 480px
+$width-pad: 992px
+
+
+//Banner
+.phone-banner
+  display: none
+.carousel
+  .carousel-indicators
+    margin-left: calc(-30% - 20px)
+    bottom: 26px 
+    text-align: left
+    li
+      width: 15px
+      height: 15px
+      margin-right: 26px
+      border: 2px solid #fff
+  .carousel-inner
+    .carousel-caption
+      margin-left: -20px 
+      padding: 0 30px
+      bottom: 20%
+      text-shadow: 0px 0px 15px rgba(20%,20%,40%,0.5) 
+      text-align: left
+      border-left: 5px solid #fff
+      .title
+        margin-bottom: 10px
+        font-size: 35px
+        letter-spacing: 4.9px
+      .content
+        margin-bottom: 0
+        font-size: 18px
+        letter-spacing: 2.9px
+        font-weight: 300
+@media screen and (max-width: 1400px)
+  .carousel
+    .carousel-indicators
+      bottom: 15px
+    .carousel-inner
+      .carousel-caption
+        bottom: 18%
+        .title
+          font-size: 30px
+        .content
+          font-size: 16px
+@media screen and (max-width: 1200px)
+  .carousel
+    .carousel-inner
+      .carousel-caption
+        .title
+          font-size: 24px
+        .content
+          font-size: 14px
+@media screen and (max-width: $width-pad)
+  .desktop-banner
+    display: none
+  .phone-banner
+    display: block
+  .carousel
+    .carousel-indicators
+      display: none
+    .carousel-inner
+      .carousel-caption
+        padding: 0 0 0 30px
+        bottom: 10%
+        left: 10%
+        .title
+          font-size: 43px
+        .content
+          font-size: 28px
+@media screen and (max-width: 600px)
+  .carousel
+    .carousel-inner
+      .carousel-caption
+        bottom: 15%
+        .title
+          font-size: 30px
+        .content
+          font-size: 16px
+@media screen and (max-width: $width-phone)
+  .carousel
+    .carousel-inner
+      .carousel-caption
+        padding: 0 0 0 20px
+        left: 13%
+        bottom: 12%
+        border-left: 3px solid #fff
+        .title
+          margin-bottom: 5px
+          font-size: 20px
+        .content
+          font-size: 14px
+
+
+//熱門商品
+.commodity
+  padding: 40px 0
+  .container
+    padding: 0
+  .row
+    margin: 0
+    overflow: auto
+    border-radius: 10px
+  .hover  
+    padding: 0
+    position: relative
+    .overlay
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 99
+      opacity: 0
+      text-align: center
+      background-color: rgba(0, 0, 0, 0.5)
+      -moz-transition: all 0.4s ease-in-out
+      -o-transition: all 0.4s ease-in-out
+      -webkit-transition: all 0.4s ease-in-out
+      transition: all 0.4s ease-in-out
+      .info
+        padding: 10px 33px
+        position: absolute
+        top: calc(50% - 20px)
+        left: calc(50% - 58px)
+        opacity: 0
+        text-decoration: none
+        font-weight: 100
+        font-size: 14px
+        letter-spacing: 1.3px
+        border-radius: 18px
+        background: #000
+        color: #fff
+        -moz-transition: all 0.8s ease-in-out
+        -o-transition: all 0.8s ease-in-out
+        -webkit-transition: all 0.8s ease-in-out
+        transition: all 0.8s ease-in-out
+  .hover:hover
+    .overlay
+      opacity: 1
+      .info
+        opacity: 1
+  .commodity-image
+    padding: 0
+    position: relative
+    background-position: center
+    -moz-background-size: cover
+    -webkit-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    .content
+      position: absolute
+      left: 47px
+      bottom: 39px
+      z-index: 100
+      color: #fff
+  .commodity-right-block
+    padding: 0
+  .commodity-left
+    height: 580px
+    .content
+      .title
+        margin-bottom: 15px
+        letter-spacing: 4.8px
+        font-weight: 300
+        font-size: 40px
+      .price
+        letter-spacing: 2.9px
+        font-weight: 300
+        font-size: 24px
+  .commodity-right
+    height: 290px
+    .content
+      left: 35px
+      bottom: 28px
+      .title
+        margin-bottom: 12px
+        letter-spacing: 3px
+        font-weight: 300
+        font-size: 25.2px
+      .price
+        margin-bottom: 0
+        letter-spacing: 3px
+        font-weight: 300
+        font-size: 17.5px
+  .more
+    margin-top: 19px
+    padding: 9px 22px
+    float: right
+    text-decoration: none
+    font-weight: 300
+    font-size: 13px
+    border-radius: 50px
+    letter-spacing: 1.3px
+    border: 1px solid #aaba3d
+    color: #aaba3d
+    -moz-transition: all 0.4s ease-in-out
+    -o-transition: all 0.4s ease-in-out
+    -webkit-transition: all 0.4s ease-in-out
+    transition: all 0.4s ease-in-out
+  .more:hover
+    background: #aaba3d
+    color: #fff
+@media screen and (max-width: $width-pad)
+  .commodity
+    padding: 0 0 40px 0
+    .container
+      padding: 0 62px
+    .row
+      border-radius: 0
+    .commodity-left
+      height: 290px
+      .content
+        left: 35px
+        bottom: 28px
+        .title
+          margin-bottom: 12px
+          font-size: 26.9px
+        .price
+          margin-bottom: 0
+          font-size: 18.7px
+@media screen and (max-width: $width-phone)
+  .commodity
+    padding: 16px 0
+    .container
+      padding: 0 20px
+    .row
+      border-radius: 10px
+    .commodity-left
+      height: 290px
+    .commodity-image
+      .content
+        left: 20px
+        bottom: 20px
+    .commodity-right-bottom
+      width: 100%
+
+
+//優惠
+.promotions 
+  padding-bottom: 35px
+  .container
+    padding: 0
+    .vertical
+      position: relative
+      .carousel-indicators
+        width: 20px
+        margin-left: 0
+        margin-bottom: 0
+        top: calc(50% - 30px)
+        bottom: initial
+        left: initial
+        right: 30px
+        text-align: center
+        li
+          margin-right: 0
+          margin-bottom: 10px
+      .carousel-inner 
+        height: 100%
+        border-radius: 10px
+        .item  
+          -webkit-transition: 0.6s ease-in-out 
+          -moz-transition: 0.6s ease-in-out 
+          -ms-transition: 0.6s ease-in-out 
+          -o-transition: 0.6s ease-in-out 
+          transition: 0.6s ease-in-out 
+        .promotions-image
+          width: 100%
+          height: 326px
+          background-position: center
+          -moz-background-size: cover
+          -webkit-background-size: cover
+          -o-background-size: cover
+          background-size: cover
+        .active 
+          transform: translate3d(0,0,0)
+          opacity: 1
+        .next 
+          transform: translate3d(0,0,0)
+          opacity: 0
+        .prev 
+          transform: translate3d(0,0,0)
+          opacity: 0
+        .next.left,.prev.right
+          transform: translate3d(0,0,0)
+          opacity: 1
+        .active.left 
+          transform: translate3d(0,0,0)
+          opacity: 0
+        .active.right 
+          transform: translate3d(0,0,0)
+          opacity: 0
+@media screen and (max-width: 1200px)
+  .promotions 
+    .container
+      .vertical
+        .carousel-inner 
+          .promotions-image
+            width: 100%
+            height: 270px
+@media screen and (max-width: $width-pad)
+  .promotions 
+    .container
+      .vertical
+        .carousel-indicators
+          display: block
+        .carousel-inner 
+          .promotions-image
+            width: 100%
+            height: 200px
+@media screen and (max-width: $width-phone)
+  .promotions 
+    .container
+      .vertical
+        .carousel-indicators
+          left: 90%
+
+
+//活動
+.activity
+  padding-bottom: 100px
+  overflow: auto
+  .container
+    padding: 0
+    .activity-block
+      padding: 0
+      overflow: auto
+      border-radius: 0 10px 0 0
+      .activity-image
+        width: 100%
+        height: 300px
+        background-position: center
+        -moz-background-size: cover
+        -webkit-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+      .activity-information
+        height: 120px
+        padding: 34px 33px 27px 33px
+        .time
+          padding-right: 20px
+          text-align: center
+          font-family: Arial
+          .year
+            font-weight: bold
+            letter-spacing: 1.35px
+            font-size: 20px
+            color: #dabb2c
+          .date
+            letter-spacing: 3.1px
+            font-weight: 300
+            font-size: 13px
+            color: #898989
+        .content
+          width: 337px
+          padding-left: 20px
+          letter-spacing: 1.9px
+          line-height: 1.88
+          font-weight: 300 
+          font-size: 16px
+          color: #2a2a2a
+        .arrow
+          padding-top: 10px
+          float: right
+          font-size: 24px
+          color: #dcdcdc
+    .activity-block:hover
+      box-shadow: 0px 3px 15px 0 rgba(20%,20%,40%,0.2)
+    .activity-block:first-child
+      border-radius: 10px 0 0 0
+@media screen and (max-width: 1200px) 
+  .activity
+    .container
+      .activity-block
+        .activity-information
+          .content
+            width: 310px
+@media screen and (max-width: $width-pad) 
+  .activity
+    padding-bottom: 50px
+    .container
+      .activity-block
+        .activity-information 
+          padding: 34px 10px 27px 10px
+          .content
+            width: 70%
+      .activity-block,.activity-block:first-child
+        border-radius: 10px 10px 0 0
+@media screen and (max-width: $width-phone) 
+  .activity
+    .container
+      .activity-block
+        .activity-information
+          height: auto
+          overflow: auto
+          .time,.content,.arrow
+            width: 100%
+            margin-bottom: 10px
+            text-align: center
+          .arrow
+            margin-bottom: 0
+
+
+//關於我們
+.about
+  padding-bottom: 117px
+  overflow: auto
+  .container
+    padding: 0
+    .title
+      width: 200px
+      margin: 10px auto
+      .font-english
+        margin-bottom: 0
+        letter-spacing: 3.6px
+        font-weight: 300
+        font-size: 29.9px
+        color: #aaba3d
+      .font
+        margin-bottom: 22px
+        letter-spacing: 5px
+        font-size: 41.4px
+        color: #2a2a2a
+      .line
+        width: 60px
+        height: 5px
+        background: #dcdcdc
+    .information
+      padding-left: 0
+      text-align: left
+      .information-title
+        margin-bottom: 20px
+        font-weight: 300 
+        letter-spacing: 3px
+        font-size: 26px
+        color: #2a2a2a
+      .information-content
+        margin-bottom: 32px
+        letter-spacing: 3px
+        line-height: 2.57
+        font-size: 14px
+        color: #2a2a2a
+      .more
+        padding: 8px 19px
+        text-decoration: none
+        font-size: 13px
+        border-radius: 20px
+        letter-spacing: 1.6px
+        border: 1px solid #aaba3d
+        color: #aaba3d
+        -moz-transition: all 0.4s ease-in-out
+        -o-transition: all 0.4s ease-in-out
+        -webkit-transition: all 0.4s ease-in-out
+        transition: all 0.4s ease-in-out
+      .more:hover
+        background: #aaba3d
+        color: #fff
+@media screen and (max-width: $width-pad)
+  .about
+    .container
+      .title
+        margin-bottom: 30px
+        text-align: center
+        .font-english
+          padding-left: 0
+        .font
+          padding-left: 0
+        .line
+          margin: 0 auto
+      .information
+        padding: 0 20px
+
+
+//訂閱我們
+.subscribe
+  height: 200px
+  position: relative
+  background: #2a2a2a
+  .subscribe-block
+    width: 1000px
+    margin-top: -38px
+    padding: 56px 0
+    position: absolute
+    left: calc(50% - 500px)
+    text-align: center
+    border-radius: 10px
+    background: #aaba3d
+    color: #fff
+    .title
+      margin-bottom: 28px
+      letter-spacing: 2.9px
+      font-weight: 300
+      font-size: 24px
+      .en
+        margin-left: 5px 
+        letter-spacing: 1.2px
+        font-size: 24px
+      .symbol
+        margin: -10px 10px 0 10px
+    .sub-title
+      margin-bottom: 29px
+      letter-spacing: 1.7px
+      font-size: 14px 
+    .mail-block
+      width: 380px
+      margin: 0 auto
+      position: relative
+      .es_lablebox,.es_msg
+        display: none
+      .es_textbox_class
+        width: 380px
+        padding: 10px 55px 10px 25px
+        border: none
+        border-radius: 50px 
+        outline: none
+        color: #333
+      .es_button
+        width: 26px
+        height: 20px
+        padding-top: 0
+        padding-bottom: 0
+        position: absolute
+        top: 10px
+        right: 20px
+        z-index: 5
+        opacity: 0
+        .es_textbox_button
+          width: 26px
+          height: 20px
+      .mail-image
+        position: absolute
+        top: 10px
+        right: 20px
+        z-index: 1
+        font-size: 20px
+        color: #aaba3d
+      .mail-image:hover
+        opacity: 0.5
+@media screen and (max-width: 1200px)
+  .subscribe
+    .subscribe-block
+      width: 768px
+      left: calc(50% - 384px)
+@media screen and (max-width: $width-pad)
+  .subscribe
+    .subscribe-block
+      width: 100%
+      left: 0
+@media screen and (max-width: $width-phone)
+  .subscribe
+    .subscribe-block
+      .title
+        font-size: 20px
+      .sub-title
+        padding: 0 30px
+        line-height: 25px
+      .mail-block
+        width: 250px
+        .es_textbox_class
+          width: 250px
+

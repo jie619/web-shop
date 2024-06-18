@@ -1,0 +1,2402 @@
+
+$width-phone: 480px
+$width-pad: 992px
+
+
+//最新消息列表Banner
+.news-banner
+  width: 100%
+  height: 560px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-repeat: no-repeat
+  background-position: center
+  -moz-background-size: cover
+  -webkit-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  .content
+    text-align: center
+    color: #fff
+    .icon
+      margin-bottom: 45px
+    .title
+      margin-bottom: 15px
+      letter-spacing: 3px
+      font-size: 33px
+    .title-english
+      font-size: 22px
+@media screen and (max-width: $width-pad)
+  .news-banner
+    height: 420px
+    .content
+      .icon
+        margin-bottom: 15px
+      .title
+        margin-bottom: 5px
+@media screen and (max-width: 700px)
+  .news-banner
+    display: none
+
+
+//最新消息列表
+.news-list
+  padding-bottom: 60px
+  .content
+    margin-top: -88px 
+    border-radius: 5px
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+    .breadcrumb
+      margin-bottom: 0
+      padding: 35px
+      border-radius: 5px 5px 0 0
+      font-size: 13px
+      font-weight: 300
+      letter-spacing: 1.3px
+      background: #fff
+      a
+        text-decoration: none
+        color: #2a2a2a
+    a
+      text-decoration: none
+    .top-list-item
+      border-bottom: 1px solid #e2e2e2
+      .image-block
+        padding: 0
+        position: relative
+        .top-list-image
+          width: 475px
+          height: 275px
+          background-repeat: no-repeat
+          background-position: center
+          -moz-background-size: cover
+          -webkit-background-size: cover
+          -o-background-size: cover
+          background-size: cover
+        .time
+          padding: 20px
+          position: absolute
+          top: 0
+          left: 0
+          text-align: center
+          font-family: Arial
+          background: #2a2a2a
+          color: #fff
+          .year
+            margin-bottom: 5px
+            font-size: 17.6px
+          .date
+            letter-spacing: 2px
+            font-size: 12.8px
+      .content-block
+        padding: 5px 30px 0 50px
+        color: #2a2a2a
+        .top-list-title
+          margin-bottom: 15px
+          padding-right: 100px
+          letter-spacing: 3.8px
+          font-size: 24px
+          .title-link
+            text-decoration: none
+            color: #2a2a2a
+        .top-list-content
+          margin-bottom: 20px
+          letter-spacing: 2.5px
+          font-size: 14px
+          .paragraph
+            font-weight: 300
+            line-height: 25px
+        .more
+          margin-top: 40px
+          margin-bottom: 30px
+          .more-link
+            width: 123px
+            padding: 10px 20px
+            text-decoration: none
+            font-size: 13px
+            text-align: center
+            border-radius: 20px
+            font-weight: 300
+            letter-spacing: 1.6px
+            border: 1px solid #aaba3d
+            color: #aaba3d
+            -moz-transition: all 0.4s ease-in-out
+            -o-transition: all 0.4s ease-in-out
+            -webkit-transition: all 0.4s ease-in-out
+            transition: all 0.4s ease-in-out
+          .more-link:hover
+            background: #aaba3d
+            color: #fff
+      .clear
+        clear: both
+    .list-item
+      border-bottom: 1px solid #e2e2e2
+      a
+        overflow: auto
+        display: flex
+        align-items: center
+        justify-content: center
+        text-decoration: none
+      .list-content-block
+        float: left      
+      .time
+        width: 120px
+        padding: 0
+        text-align: center
+        font-family: Arial
+        .year
+          margin-bottom: 8px
+          letter-spacing: 0.9px
+          font-size: 22px
+          font-weight: bold
+          color: #aaba3d
+        .date
+          letter-spacing: 2.6px
+          font-size: 16px
+          color: #898989
+      .image-block
+        width: 220px
+        .list-image
+          width: 220px
+          height: 127px
+          background-repeat: no-repeat
+          background-position: center
+          -moz-background-size: cover
+          -webkit-background-size: cover
+          -o-background-size: cover
+          background-size: cover
+      .list-content
+        width: calc(100% - 430px)
+        padding-left: 50px
+        color: #2a2a2a
+        .phone-time
+          display: none
+        .list-title
+          margin-bottom: 10px
+          letter-spacing: 3.8px
+          font-weight: 300
+          font-size: 24px
+          overflow: hidden
+          white-space: nowrap
+          text-overflow: ellipsis
+          .title-link
+            text-decoration: none
+            color: #2a2a2a
+        .paragraph
+          overflow: hidden
+          white-space: nowrap
+          text-overflow: ellipsis
+          letter-spacing: 2.5px
+          font-size: 14px
+      .arrow
+        padding: 0 30px
+        float: right
+        text-align: center
+        font-size: 20px
+        .arrow-link
+          text-decoration: none
+          color: #aaba3d
+    .list-item:hover
+      box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+  .spinner 
+    margin: 50px auto 
+    width: 8px
+    text-align: center
+    .bounce 
+      width: 8px
+      height: 8px
+      margin: 30px 0
+      border-radius: 100%
+      border: 1px solid #c6c6c6
+      background-color: #fff
+      -webkit-animation: bouncedelay 1.4s infinite ease-in-out
+      animation: bouncedelay 1.4s infinite ease-in-out
+      -webkit-animation-fill-mode: both
+      animation-fill-mode: both
+    .bounce1 
+      -webkit-animation-delay: -1.0s
+      animation-delay: -1.0s
+    .bounce2 
+      -webkit-animation-delay: -0.5s
+      animation-delay: -0.5s  
+
+@-webkit-keyframes bouncedelay 
+  0%, 80%, 100% 
+    -webkit-transform: scale(1.5) 
+  40% 
+    -webkit-transform: scale(1.5) 
+    background-color: #c6c6c6  
+@keyframes bouncedelay 
+  0%, 80%, 100%  
+    transform: scale(1.5)
+    -webkit-transform: scale(1.5)
+  40% 
+    transform: scale(1.5)
+    -webkit-transform: scale(1.5) 
+    background-color: #c6c6c6  
+@media screen and (max-width: 1200px)
+  .news-list
+    .content
+      .top-list-item
+        .image-block
+          .top-list-image
+            width: 390px
+@media screen and (max-width: $width-pad)
+  .news-list
+    .content
+      margin-top: -58px 
+      .breadcrumb
+        padding: 20px 35px
+      .top-list-item
+        .image-block
+          margin: 0 30px
+          .top-list-image
+            width: 100%
+            height: 320px
+        .content-block
+          padding: 5px 30px
+          .top-list-title
+            margin-top: 20px
+          .more
+            .more-link
+              margin: 0 auto
+      .list-item
+        .time
+          width: 80px
+        .list-content
+          width: calc(100% - 350px)
+          padding-left: 20px
+        .arrow
+          padding: 0 0 0 10px
+@media screen and (max-width: 700px)
+  .news-list
+    .container
+      padding: 0
+    .content
+      margin-top: 0 
+      padding: 0
+      box-shadow: none
+      .breadcrumb
+        padding: 35px 62px
+      .top-list-item
+        padding: 0 62px
+        .image-block
+          margin: 0
+          .top-list-image
+            width: 100%
+            height: 300px
+          .time
+            padding: 25px
+            .year
+              font-size: 26px
+            .date
+              font-size: 19px
+        .content-block
+          padding: 43px 0
+          .top-list-title
+            margin-top: 0
+            padding-right: 0
+          .more
+            text-align: center
+      .list-item
+        padding: 32px 62px
+        .time
+          display: none
+        .image-block
+          width: 220px
+        .list-content
+          width: calc(100% - 252px)
+          .phone-time
+            margin-bottom: 10px
+            display: block
+            font-family: Arial
+            font-size: 14px
+            line-height: 1.28
+            letter-spacing: 0.8px
+            color: #898989
+@media screen and (max-width: $width-phone)
+  .news-list
+    .content
+      .breadcrumb
+        padding: 35px 20px
+      .top-list-item
+        padding: 0 20px
+        .image-block
+          .time
+            padding: 20px
+            .year
+              font-size: 20px
+            .date
+              font-size: 16px
+        .content-block
+          padding: 30px 0
+      .list-item
+        padding: 32px 20px
+        a
+          display: block
+        .image-block
+          width: 100%
+          .list-image
+            width: 100%
+            height: 200px
+        .list-content
+          width: calc(100% - 22px)
+          margin-top: 20px
+          padding-left: 0
+          .list-title
+            font-size: 18px
+        .arrow
+          padding-top: 60px  
+
+
+//最新消息內容Banner
+.news-content-banner
+  width: 100%
+  height: 560px
+  background-repeat: no-repeat
+  background-position: center
+  -moz-background-size: cover
+  -webkit-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  -webkit-filter: blur(3px) brightness(50%)
+  filter: blur(3px) brightness(50%)
+@media screen and (max-width: $width-pad)
+  .news-content-banner
+    height: 420px
+@media screen and (max-width: $width-phone)
+  .news-content-banner
+    height: 300px
+
+
+//最新消息內容
+.news-content
+  .news-content-all
+    margin-top: -360px 
+    padding-bottom: 50px
+    border-radius: 5px
+    background: #fff 
+    .content-block
+      padding: 0 
+      padding-bottom: 90px
+      border-radius: 5px
+      box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+      background: #fff
+      .breadcrumb
+        margin-bottom: 0
+        padding: 35px
+        border-radius: 5px 0 0 0
+        font-size: 13px
+        font-weight: 300
+        letter-spacing: 1.3px
+        background: #fff
+        a
+          text-decoration: none
+          color: #2a2a2a
+      .article
+        width: 80%
+        margin: 0 auto
+        .article-title
+          margin-top: 30px
+          margin-bottom: 35px
+          padding-left: 25px
+          border-left: 5px solid #aaba3d
+          .date
+            margin-bottom: 10px
+            letter-spacing: 1.7px
+            font-family: Arial
+            font-size: 14px
+            color: #999999
+          .title
+            letter-spacing: 4.2px
+            font-size: 26px
+            color: #2a2a2a
+        .article-image
+          width: 100%
+        .article-content
+          margin-top: 40px
+          margin-bottom: 70px
+          line-height: 35px
+          font-weight: 300
+          letter-spacing: 2.5px
+          font-size: 14px
+          word-wrap: break-word
+          word-break: break-all
+          color: #2a2a2a
+          img
+            width: 100%
+        .article-share
+          .woo-social-buttons
+            float: left
+          .line-share
+            margin: 10px 0px
+            float: left
+    .list-block
+      padding: 0 
+      border-radius: 5px
+      box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+      background: #fff
+      .popular-posts
+        .widget-title
+          margin: 0
+          padding: 15px 0
+          text-align: center
+          letter-spacing: 2.9px
+          font-weight: 500
+          font-size: 16px
+          border-radius: 0 5px 0 0
+          background: #2a2a2a
+          color: #fff
+          .icon
+            margin-right: 10px
+            margin-top: -4px
+        .wpp-list
+          margin: 0
+          padding: 0
+          .top-news-list
+            position: relative
+            list-style: none
+            a
+              text-decoration: none
+            .hover  
+              img
+                width: 100%
+                margin: 0
+                float: none
+            .top-news-title
+              letter-spacing: 3px
+              .wpp-post-title
+                padding: 20px 20px 45px 20px 
+                overflow: hidden
+                white-space: nowrap
+                text-overflow: ellipsis
+                display: block
+                text-decoration: none
+                font-size: 14px
+                font-weight: 300
+                letter-spacing: 2.2px
+                color: #2a2a2a
+            .top-news-date
+              position: absolute
+              left: 20px
+              bottom: 20px
+              font-family: Arial
+              font-size: 12px
+              font-weight: 300
+              letter-spacing: 1.9px
+              color: #aaaaaa
+          .top-news-list:hover
+            background: #aaba3d
+            .hover
+              a
+                img
+                  opacity: 0.7
+            .top-news-title,.wpp-post-title,.top-news-date
+              color: #fff
+      .widget_recent_entries
+        .widget-title
+          margin: 0
+          padding: 15px 0
+          text-align: center
+          border-radius: 0 5px 0 0
+          letter-spacing: 2.9px
+          font-size: 16px
+          font-weight: 500
+          background: #2a2a2a
+          color: #fff
+          .icon
+            margin-right: 10px
+            margin-top: -4px
+        ul
+          margin: 0
+          padding: 0
+          li
+            overflow: auto
+            border-bottom: 1px solid #d6d6d6
+            a
+              width: 100%
+              padding: 20px
+              display: block
+              overflow: hidden
+              white-space: nowrap
+              text-overflow: ellipsis
+              text-decoration: none
+              font-weight: 300
+              letter-spacing: 2.2px
+              font-size: 14px
+              color: #2a2a2a
+              .latest-news-title
+                width: calc(100% - 14px)
+                float: left
+                overflow: hidden
+                white-space: nowrap
+                text-overflow: ellipsis
+                font-size: 14px
+                color: #2a2a2a
+              .latest-news-arrow
+                width: 14px
+                float: left
+                font-size: 14px
+                color: #aaba3d
+          li:hover
+            background: #aaba3d
+            a
+              color: #fff
+              .latest-news-title,.latest-news-arrow
+                color: #fff
+    .clear
+      clear: both        
+@media screen and (max-width: $width-pad)
+  .news-content
+    .container
+      width: 100%
+    .news-content-all
+      margin-top: -220px
+      .content-block
+        width: calc(100% - 235px)
+        .article
+          .article-content
+            font-size: 16px
+      .list-block
+        width: 235px
+        .popular-posts
+          .wpp-list
+            .top-news-list
+              .top-news-link
+                .top-news-title
+                  font-size: 20px
+                .top-news-date
+                  font-size: 18px
+@media screen and (max-width: 600px)
+  .news-content
+    .news-content-all
+      .content-block
+        width: 100%
+      .list-block
+        width: 100%
+@media screen and (max-width: $width-phone)
+  .news-content
+    .news-content-all
+      .content-block
+        .breadcrumb
+          padding: 25px
+        .article
+          width: 90%
+          .article-title
+            margin-top: 10px
+          .article-content
+            margin-top: 20px
+            margin-bottom: 50px
+            font-size: 14px
+      .list-block
+        .popular-posts
+          .wpp-list
+            .top-news-list
+              .top-news-link
+                .top-news-title
+                  font-size: 16px
+                .top-news-date
+                  font-size: 14px
+
+
+//聯絡我們Banner
+.contact-banner
+  width: 100%
+  height: 560px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-repeat: no-repeat
+  background-position: center
+  -moz-background-size: cover
+  -webkit-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  .content
+    text-align: center
+    color: #fff
+    .icon
+      margin-bottom: 45px
+    .title
+      margin-bottom: 15px
+      letter-spacing: 3px
+      font-size: 33px
+      h1
+        margin: 0
+        font-size: 33px
+    .title-english
+      font-size: 22px
+@media screen and (max-width: $width-pad)
+  .contact-banner
+    height: 420px
+    .content
+      .icon
+        margin-bottom: 15px
+      .title
+        margin-bottom: 5px
+@media screen and (max-width: $width-phone)
+  .contact-banner
+    height: 300px
+
+
+//聯絡我們
+.contact-us
+  padding-bottom: 60px
+  .content
+    margin-top: -88px 
+    border-radius: 5px
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+    .breadcrumb
+      margin-bottom: 0
+      padding: 35px
+      border-radius: 5px 5px 0 0
+      font-size: 13px
+      font-weight: 300
+      letter-spacing: 1.3px
+      background: #fff
+      a
+        text-decoration: none
+        color: #2a2a2a
+    .top-message
+      text-align: center
+      .paragraph
+        padding-bottom: 5px
+        letter-spacing: 3px
+        font-weight: 300
+        font-size: 14px
+        letter-spacing: 2px
+        color: #2a2a2a
+        span
+          font-weight: bold
+      .advisory-button
+        margin: 20px auto
+        padding: 10px 30px
+        text-decoration: none
+        font-size: 13px
+        font-weight: 300
+        border-radius: 20px
+        letter-spacing: 1.3px
+        border: 1px solid #aaba3d
+        color: #aaba3d
+        -moz-transition: all 0.4s ease-in-out
+        -o-transition: all 0.4s ease-in-out
+        -webkit-transition: all 0.4s ease-in-out
+        transition: all 0.4s ease-in-out
+      .advisory-button:hover
+        background: #aaba3d
+        color: #fff
+    .form
+      width: 700px
+      margin: 0 auto
+      padding: 95px 0 50px 0
+      .block
+        margin-bottom: 40px
+        overflow: auto
+        .font
+          padding: 10px 0
+          padding-right: 5px
+          text-align: right
+          font-size: 14px
+          font-weight: 300
+          letter-spacing: 1.1px
+          color: #2a2a2a
+        .phone-select
+          position: relative
+          .form-select
+            -webkit-appearance: none      
+            -moz-appearance: none  
+            appearance: none
+          .icon
+            position: absolute
+            top: 15px
+            right: 45px
+            -ms-transform: rotate(90deg)
+            -webkit-transform: rotate(90deg)
+            transform: rotate(90deg)
+            font-size: 8px
+            color: #aaba3d
+        .form-input,.form-select,.form-textarea
+          width: 100%
+          height: 40px
+          padding: 0 15px 
+          font-size: 13px
+          font-weight: 300
+          letter-spacing: 2.1px
+          outline: none
+          border-radius: 5px
+          border: 1px solid #d6d6d6
+        .block-left
+          padding-right: 0 
+        .form-textarea
+          height: 200px
+          padding: 15px
+      .bottom-block
+        margin-bottom: 0
+      .wpcf7-response-output
+        margin: 10px 0 40px 0
+        border: none
+        text-align: center
+        letter-spacing: 2.1px
+        font-weight: 300
+        font-size: 13px
+        color: #737373
+      .sent
+        text-align: center
+        .sent-button
+          margin-left: 20px
+          padding: 8px 50px
+          outline: none
+          text-decoration: none
+          font-size: 14px
+          font-weight: 300
+          border-radius: 20px
+          letter-spacing: 1.4px
+          border: 1px solid #aaba3d
+          background: #aaba3d
+          color: #fff
+          -moz-transition: all 0.4s ease-in-out
+          -o-transition: all 0.4s ease-in-out
+          -webkit-transition: all 0.4s ease-in-out
+          transition: all 0.4s ease-in-out
+        .sent-button:hover
+          background: #fff
+          color: #aaba3d
+@media screen and (max-width: $width-pad)
+  .contact-us
+    .content
+      margin-top: -58px 
+      .breadcrumb
+        padding: 20px 35px
+      .form
+        width: 600px
+@media screen and (max-width: 700px)      
+  .contact-us
+    .content
+      .form
+        width: 430px
+@media screen and (max-width: $width-phone) 
+  .contact-us
+    .content
+      .top-message
+        margin-top: 30px
+        padding: 0 35px
+      .form 
+        width: 95%
+        .block
+          .font
+            width: 25%
+          .phone-input
+            width: 75%
+          .phone-select
+            width: 75%
+            margin-top: 40px
+            margin-left: 25%
+          .block-left
+            width: 100%
+            padding: 0
+          .phone-textarea
+            width: 75%
+            margin-left: 25%
+            margin-bottom: 30px
+
+
+//關於我們Banner
+.about-banner
+  width: 100%
+  height: 560px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-repeat: no-repeat
+  background-position: center
+  -moz-background-size: cover
+  -webkit-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  .content
+    text-align: center
+    color: #fff
+    .icon
+      margin-bottom: 45px
+    .title
+      margin-bottom: 15px
+      letter-spacing: 3px
+      font-size: 33px
+      h1
+        margin: 0
+        font-size: 33px
+    .title-english
+      font-size: 22px
+@media screen and (max-width: $width-pad)
+  .about-banner
+    height: 420px
+    .content
+      .icon
+        margin-bottom: 15px
+      .title
+        margin-bottom: 5px
+@media screen and (max-width: $width-phone)
+  .about-banner
+    height: 300px 
+
+
+//關於我們
+.about-us
+  padding-bottom: 250px
+  .content
+    margin-top: -88px 
+    border-radius: 5px
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+    .breadcrumb
+      margin-bottom: 0
+      padding: 35px
+      border-radius: 5px 5px 0 0
+      font-size: 13px
+      font-weight: 300
+      letter-spacing: 1.3px
+      background: #fff
+      a
+        text-decoration: none
+        color: #2a2a2a
+    .all
+      width: 80%
+      margin: 0 auto
+      padding-top: 30px
+      .partner
+        text-align: center
+        .partner-all
+          margin-top: 65px
+          padding: 30px 0
+          border-radius: 10px
+          background: #eeeeee
+          .partner-content
+            width: 450px
+            margin: 0 auto
+            overflow: auto
+          .symbol
+            padding: 20px 0 0 0
+          .font
+            padding: 0
+          .paragraph
+            margin: 10px 0
+            letter-spacing: 2px
+            font-weight: 300
+            font-size: 20px
+            color: #2a2a2a
+            .focus
+              letter-spacing: 2.2px
+              font-size: 22px
+      .block
+        margin-top: 130px
+        .float-left
+          float: left
+        .float-right
+          float: right
+        .text-left  
+          padding-left: 50px
+          text-align: left
+        .text-right  
+          padding-right: 50px
+          text-align: right
+        .image
+          width: 50%
+          height: 302px
+        .introduction
+          width: 50% 
+          height: 302px
+          .introduction-all
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+          .introduction-title 
+            h2
+              margin-bottom: 35px
+              font-weight: 300
+              letter-spacing: 3px
+              font-size: 30px
+              color: #2a2a2a
+          .introduction-content 
+            margin-bottom: 35px
+            font-weight: 300
+            letter-spacing: 1.5px
+            font-size: 15px
+            color: #2a2a2a  
+          .button
+            padding: 10px 40px
+            outline: none
+            text-decoration: none
+            font-size: 14px
+            font-weight: 300
+            letter-spacing: 1.4px
+            border-radius: 50px
+            border: 1px solid #2a2a2a
+            background: #fff
+            color: #2a2a2a  
+            -moz-transition: all 0.4s ease-in-out
+            -o-transition: all 0.4s ease-in-out
+            -webkit-transition: all 0.4s ease-in-out
+            transition: all 0.4s ease-in-out
+          .button:hover
+            background: #2a2a2a
+            color: #fff
+      .clear
+        clear: both  
+    .view-more
+      margin-top: 130px
+      padding: 65px 0
+      border-radius: 0 0 5px 5px
+      text-align: center
+      background: #d9bb2c
+      .more
+        padding: 10px 20px
+        outline: none
+        text-decoration: none
+        font-size: 15px
+        font-weight: 300
+        border-radius: 20px
+        letter-spacing: 1.5px
+        border: 1px solid #fff
+        background: #d9bb2c
+        color: #fff 
+        -moz-transition: all 0.4s ease-in-out
+        -o-transition: all 0.4s ease-in-out
+        -webkit-transition: all 0.4s ease-in-out
+        transition: all 0.4s ease-in-out
+      .more:hover
+        background: #fff
+        color: #d9bb2c   
+@media screen and (max-width: $width-pad)
+  .about-us
+    .content
+      margin-top: -58px 
+      .breadcrumb
+        padding: 20px 35px
+      .all
+        width: 90%
+        .block
+          margin-top: 80px
+          overflow: visible
+          .float-left,.float-right
+            float: none
+          .text-left,.text-right  
+            padding-left: 0
+            padding-right: 0
+            text-align: center
+          .image
+            width: 100%
+            height: auto
+            margin-bottom: 50px
+          .introduction
+            width: 100% 
+            height: auto
+            .introduction-all
+              position: static
+              transform: translateY(0%)
+@media screen and (max-width: 700px)
+  .about-us
+    padding-bottom: 50px
+    .content
+      .all
+        .partner
+          .partner-all
+            .partner-content
+              width: 100%
+@media screen and (max-width: $width-phone)
+  .about-us
+    .content
+      .all
+        width: 100%
+        .block
+          .image
+            .img
+              width: 100%
+          .introduction
+            .introduction-title 
+              h2
+                font-size: 25px
+            .introduction-content 
+              font-size: 12px
+
+
+//關於我們諮詢
+.advisory
+  height: 200px
+  position: relative
+  background: #2a2a2a
+  .advisory-all
+    width: 960px
+    margin-top: -150px
+    padding: 45px 0
+    position: absolute
+    left: calc(50% - 480px)
+    overflow: auto
+    text-align: center
+    border-radius: 5px
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+    background: #fff
+    color: #2a2a2a
+    .advisory-block
+      border-left: 1px solid #d6d6d6
+      .title
+        margin: 25px 0 40px 0
+        letter-spacing: 2.4px
+        font-weight: 300
+        font-size: 24px
+      .content
+        margin-bottom: 30px
+        letter-spacing: 1.3px
+        font-weight: 300
+        font-size: 13px
+      .contact
+        font-size: 18px
+        .button
+          padding: 8px 40px
+          outline: none
+          text-decoration: none
+          font-size: 14px
+          border-radius: 20px
+          letter-spacing: 1.4px
+          font-weight: 300
+          border: 1px solid #2a2a2a
+          background: #fff
+          color: #2a2a2a  
+          -moz-transition: all 0.4s ease-in-out
+          -o-transition: all 0.4s ease-in-out
+          -webkit-transition: all 0.4s ease-in-out
+          transition: all 0.4s ease-in-out
+        .button:hover
+          background: #2a2a2a
+          color: #fff  
+    .advisory-block:first-child
+      border-left: none
+@media screen and (max-width: $width-pad)
+  .advisory
+    .advisory-all
+      width: 660px
+      left: calc(50% - 330px)
+@media screen and (max-width: 700px)
+  .advisory
+    height: auto
+    .advisory-all
+      width: 100%
+      margin-top: 0
+      padding: 20px 0
+      position: static
+      left: 0
+      .advisory-block
+        width: 100%
+        margin: 20px 0
+        border-left: none
+
+
+//購物指南
+.guide
+  padding: 70px 0
+  .container
+    padding: 0
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+    .breadcrumb
+      margin-bottom: 0
+      padding: 35px
+      border-radius: 0
+      font-size: 13px
+      font-weight: 300
+      letter-spacing: 1.3px
+      background: #fff
+      a
+        text-decoration: none
+        color: #2a2a2a
+    .guide-content
+      overflow: auto
+      border-top: 1px solid #d6d6d6
+      .slidebar-button
+        display: none
+      .slidebar
+        padding: 0
+        .slidebar-menu
+          padding: 0
+          .slidebar-item
+            list-style: none
+            text-align: center
+            a
+              padding: 30px 0
+              position: relative
+              display: block
+              font-size: 16px
+              font-weight: 300
+              letter-spacing: 1.6px
+              text-decoration: none
+              color: #2a2a2a
+            a:before
+              width: 0
+              height: 100%
+              content: ""
+              position: absolute
+              z-index: -1
+              top: 0
+              left: 0
+              background: #aaba3d
+              -moz-transition: all 0.3s ease-in-out
+              -o-transition: all 0.3s ease-in-out
+              -webkit-transition: all 0.3s ease-in-out
+              transition: all 0.3s ease-in-out
+            a:hover
+              color: #aaba3d
+            a:hover:before
+              width: 8px
+          .current-menu-item
+            a:before
+              width: 8px
+@media screen and (max-width: $width-pad)
+  .guide
+    padding: 70px 0
+    .container
+      .guide-content
+        .slidebar-button
+          width: 40px
+          height: 40px
+          padding: 5px 0
+          position: fixed
+          top: 300px
+          left: 0
+          z-index: 1000
+          display: block
+          font-size: 24px 
+          text-align: center
+          cursor: pointer
+          background: #2a2a2a
+          color: #fff
+          .leftArrow
+            display: none
+        .slidebar
+          width: 280px
+          position: fixed
+          left: -280px
+          z-index: 1000
+          background: #2a2a2a
+          .slidebar-menu
+            .slidebar-item
+              a
+                color: #fff
+            .slidebar-item:hover
+              a
+                color: #aaba3d
+            .current-menu-item
+              a
+                border-left: none
+                color: #aaba3d
+@media screen and (max-width: $width-pad)
+  .guide
+    .container
+      .guide-content
+        .slidebar
+          .slidebar-menu
+            .slidebar-item
+              a
+                padding: 15px 0
+
+
+//購物指南-訂購須知
+.notice
+  padding: 40px 55px
+  border-left: 1px solid #d6d6d6
+  color: #2a2a2a
+  .main-title
+    margin-bottom: 35px
+    font-size: 20px
+    font-weight: 300
+    letter-spacing: 2px
+  .content
+    margin-bottom: 35px
+    font-size: 13px
+    font-weight: 300
+    letter-spacing: 1.3px
+    line-height: 30px
+  .title
+    margin-bottom: 15px
+    font-size: 15px
+    letter-spacing: 1.5px
+  .list
+    margin: 0
+    padding-left: 20px
+    .item
+      margin-bottom: 15px
+      .sub-list
+        padding: 0
+        list-style: none
+@media screen and (max-width: $width-pad)
+  .notice
+    padding: 40px 35px 
+    border-left: none 
+@media screen and (max-width: $width-phone)
+  .notice
+    padding: 40px 10px
+
+
+//購物指南-購物流程
+.shoppingProcess
+  padding: 40px 55px 80px 55px
+  border-left: 1px solid #d6d6d6
+  color: #2a2a2a
+  .main-title
+    margin-bottom: 35px
+    font-size: 20px
+    font-weight: 300
+    letter-spacing: 2px
+  .process
+    width: 65%
+    margin-bottom: 40px
+    padding:  20px 0
+    position: relative
+    text-align: center
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 2px
+    background: #ededed
+  .process:before
+    content: ''
+    width: 0
+    height: 0
+    position: absolute
+    left: calc(50% - 10px)
+    bottom: -15px
+    border-style: solid
+    border-width: 15px 10px 0 10px
+    border-color: #ededed transparent transparent transparent
+  .end
+    width: 65%
+    margin-bottom: 40px
+    padding:  20px 0
+    text-align: center
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 2px
+    background: #d9bb2c
+    color: #fff
+@media screen and (max-width: $width-pad)
+  .shoppingProcess
+    padding: 40px 35px 
+    border-left: none 
+@media screen and (max-width: $width-phone)
+  .shoppingProcess
+    padding: 40px 10px 
+    .process,.end
+      width: 100%
+
+
+//購物指南-付款方式
+.paymentMethod
+  padding: 40px 55px
+  border-left: 1px solid #d6d6d6
+  color: #2a2a2a
+  .main-title
+    margin-bottom: 35px
+    font-size: 20px
+    font-weight: 300
+    letter-spacing: 2px
+  .block
+    margin-bottom: 30px
+    overflow: auto
+    line-height: 30px
+    .payment-image
+      width: 77px
+      float: left
+      .image
+        width: 100%
+    .payment-content
+      width: calc(100% - 112px)
+      margin-left: 35px
+      float: left
+      .title
+        margin-bottom: 15px
+        font-size: 18px
+        letter-spacing: 1.5px
+      .sub
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: 2px
+      .remind
+        padding: 15px 20px
+        background: #ededed
+@media screen and (max-width: $width-pad)
+  .paymentMethod
+    padding: 40px 35px 
+    border-left: none
+@media screen and (max-width: $width-phone)
+  .paymentMethod
+    padding: 40px 10px 
+    .block
+      .payment-image
+        width: 100%
+        margin-bottom: 15px
+        .image
+          width: 77px
+      .payment-content
+        width: 100%
+        margin-left: 0
+
+
+//購物指南-配送方式
+.deliveryMethod
+  padding: 40px 55px
+  border-left: 1px solid #d6d6d6
+  color: #2a2a2a
+  .main-title
+    margin-bottom: 35px
+    font-size: 20px
+    font-weight: 300
+    letter-spacing: 2px
+  .block
+    margin-bottom: 35px
+    .title
+      font-size: 20px
+      .search
+        margin-left: 15px
+        padding: 5px 20px
+        outline: none
+        text-decoration: none
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: 2px
+        border-radius: 50px
+        border: 1px solid #d9bb2c
+        background: #fff
+        color: #d9bb2c  
+        -moz-transition: all 0.4s ease-in-out
+        -o-transition: all 0.4s ease-in-out
+        -webkit-transition: all 0.4s ease-in-out
+        transition: all 0.4s ease-in-out
+      .search:hover
+        background: #d9bb2c
+        color: #fff  
+    .sub
+      margin: 15px 0
+      font-size: 16px
+      font-weight: 300
+      letter-spacing: 2px
+    .remind
+      padding: 15px 20px
+      line-height: 30px
+      background: #ededed
+@media screen and (max-width: $width-pad)
+  .deliveryMethod
+    padding: 40px 35px 
+    border-left: none 
+@media screen and (max-width: $width-phone)
+  .deliveryMethod
+    padding: 40px 10px  
+
+
+//購物指南-退貨流程
+.returnProcess
+  padding: 40px 55px 395px 55px
+  border-left: 1px solid #d6d6d6
+  color: #2a2a2a
+  .main-title
+    margin-bottom: 35px
+    font-size: 20px
+    font-weight: 300
+    letter-spacing: 2px
+@media screen and (max-width: $width-pad)
+  .returnProcess
+    padding: 40px 35px 
+    border-left: none  
+@media screen and (max-width: $width-phone)
+  .returnProcess
+    padding: 40px 10px  
+
+
+//購物指南-使用優惠券
+.useCoupon
+  padding: 40px 55px 80px 55px
+  border-left: 1px solid #d6d6d6
+  color: #2a2a2a
+  .main-title
+    margin-bottom: 35px
+    font-size: 20px
+    font-weight: 300
+    letter-spacing: 2px
+  .process
+    width: 65%
+    margin-bottom: 40px
+    padding:  20px 0
+    position: relative
+    text-align: center
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 2px
+    background: #ededed
+  .process:before
+    content: ''
+    width: 0
+    height: 0
+    position: absolute
+    left: calc(50% - 10px)
+    bottom: -15px
+    border-style: solid
+    border-width: 15px 10px 0 10px
+    border-color: #ededed transparent transparent transparent
+  .end
+    width: 65%
+    margin-bottom: 40px
+    padding:  20px 0
+    text-align: center
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 2px
+    background: #d9bb2c
+    color: #fff
+@media screen and (max-width: $width-pad)
+  .useCoupon
+    padding: 40px 35px 
+    border-left: none  
+@media screen and (max-width: $width-phone) 
+  .useCoupon
+    padding: 40px 10px
+    .process,.end
+      width: 100%
+
+
+//購物指南-問與答
+.questionAnswer
+  padding: 40px 55px 120px 55px
+  border-left: 1px solid #d6d6d6
+  color: #2a2a2a
+  .main-title
+    margin-bottom: 35px
+    font-size: 20px
+    font-weight: 300
+    letter-spacing: 2px
+  .panel-default
+    border: none
+    .panel-heading
+      background-image: none
+      background-color: #fff
+      a
+        font-size: 18px 
+        text-decoration: none
+        .minus,.plus
+          margin-right: 15px
+          color: #aaba3d
+        .plus
+          display: none
+      .collapsed
+        .minus
+          display: none
+        .plus
+          display: inline
+    .panel-collapse
+      margin-left: 30px
+      .panel-body
+        font-size: 14px 
+        font-weight: 300
+        letter-spacing: 2px
+        line-height: 30px
+        border-top-color: #fff
+        .point
+          color: #aaba3d
+@media screen and (max-width: $width-pad)
+  .questionAnswer
+    padding: 40px 35px 
+    border-left: none   
+@media screen and (max-width: $width-phone)
+  .questionAnswer
+    padding: 40px 10px 
+    .panel-default
+      .panel-heading
+        a
+          font-size: 14px 
+
+
+//營業據點Banner
+.store-banner
+  width: 100%
+  height: 560px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-repeat: no-repeat
+  background-position: center
+  -moz-background-size: cover
+  -webkit-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  .content
+    text-align: center
+    color: #fff
+    .icon
+      margin-bottom: 45px
+    .title
+      margin-bottom: 15px
+      letter-spacing: 3px
+      font-size: 33px
+    .title-english
+      font-size: 22px
+@media screen and (max-width: $width-pad)
+  .store-banner
+    height: 420px
+    .content
+      .icon
+        margin-bottom: 15px
+      .title
+        margin-bottom: 5px
+@media screen and (max-width: $width-phone)
+  .store-banner
+    height: 300px
+
+
+//營業據點
+.store
+  padding-bottom: 60px
+  .content
+    margin-top: -88px 
+    border-radius: 5px
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+    .breadcrumb
+      margin-bottom: 0
+      padding: 35px
+      font-size: 13px
+      font-weight: 300
+      letter-spacing: 1.3px
+      border-radius: 5px 5px 0 0
+      background: #fff
+      a
+        text-decoration: none
+        color: #2a2a2a
+    .stronghold
+      overflow: auto  
+      border-top: 1px solid #d6d6d6  
+      .nav
+        padding: 0
+        border: none
+        .tab-li
+          width: 100%
+          margin: 0
+          float: none
+          list-style: none
+          text-align: center
+          a
+            margin-right: 0
+            padding: 30px 0
+            position: relative
+            display: block
+            letter-spacing: 1.6px
+            font-weight: 300
+            font-size: 16px
+            text-decoration: none
+            border: none
+            color: #2a2a2a
+          a:before
+            width: 0
+            height: 100%
+            content: ""
+            position: absolute
+            z-index: -1
+            top: 0
+            left: 0
+            background: #aaba3d
+            -moz-transition: all 0.3s ease-in-out
+            -o-transition: all 0.3s ease-in-out
+            -webkit-transition: all 0.3s ease-in-out
+            transition: all 0.3s ease-in-out
+          a:hover
+            border: none
+            background: none
+            color: #aaba3d
+          a:hover:before
+            width: 8px
+        .active
+          a
+            border: none
+            border-radius: 0
+            background-color: transparent
+          a:before
+            width: 8px
+      .tab-content
+        min-height: 330px
+        padding: 0
+        border-left: 1px solid #d6d6d6  
+        color: #2a2a2a
+        .block
+          padding: 20px 0
+          overflow: auto
+          border-bottom: 1px solid #d6d6d6
+          .store-name  
+            height: 120px
+            padding: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            letter-spacing: 2px
+            font-weight: 300
+            font-size: 20px 
+          .store-information
+            height: 120px
+            padding: 0
+            padding-left: 40px 
+            border-left: 1px solid #d6d6d6   
+            .font
+              margin-bottom: 15px
+              letter-spacing: 1.4px
+              font-weight: 300
+              font-size: 14px 
+            .map-link
+              text-decoration: none
+              color: #2a2a2a
+              letter-spacing: 1.4px
+              font-weight: 300
+              font-size: 14px 
+              .image
+                margin-right: 20px
+            .map-link:hover
+              opacity: 0.7
+        .block:last-child
+          border-bottom: none
+@media screen and (max-width: $width-pad)   
+  .store
+    .content
+      margin-top: -58px 
+      .breadcrumb
+        padding: 20px 35px
+      .stronghold
+        .nav
+          border-bottom: 1px solid #d6d6d6
+          .tab-li
+            a
+              padding: 10px 0
+        .tab-content
+          min-height: auto
+          border-left: none
+          .block
+            .store-name  
+              height: auto
+              margin-bottom: 20px 
+              padding: 0 40px 
+              display: block
+              text-align: left
+            .store-information
+              height: auto
+              padding: 0 40px 
+              border-left: none
+               
+
+//版權聲明
+.privacy
+  padding: 70px 0
+  .container
+    width: 750px
+    padding: 0
+    border-radius: 5px
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+    .breadcrumb
+      margin-bottom: 0
+      padding: 35px
+      border-radius: 5px 5px 0 0
+      font-size: 13px
+      font-weight: 300
+      letter-spacing: 1.3px
+      background: #fff
+      a
+        text-decoration: none
+        color: #2a2a2a
+    .privacy-content
+      padding: 25px 65px
+      line-height: 30px
+      color: #2a2a2a
+      .top
+        margin-bottom: 60px
+        font-size: 13px
+        font-weight: 300
+        letter-spacing: 1.3px
+      .article
+        margin-bottom: 40px
+        color: #2a2a2a
+        .title
+          font-size: 15px
+          letter-spacing: 1.5px
+        .content
+          font-size: 13px
+          font-weight: 300
+          letter-spacing: 1.3px
+          p,.first
+            text-indent: 2em
+@media screen and (max-width: $width-pad)   
+  .privacy
+    .container
+      .breadcrumb
+        padding: 20px 35px
+@media screen and (max-width: 768px)
+  .privacy
+    .container
+      width: 100%
+@media screen and (max-width: $width-phone)
+  .privacy
+    .container
+      .privacy-content
+        padding: 10px 25px
+        .top
+          margin-bottom: 30px
+        .article
+          margin-bottom: 20px
+
+
+//節日企劃
+.festival
+  .banner-top
+    height: 750px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    background-position: center
+    -moz-background-size: cover
+    -webkit-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    .content
+      text-align: center
+      color: #fff
+      .title-english
+        margin-bottom: 40px
+      .title
+        margin-bottom: 40px
+        font-size: 40px
+      .limited
+        margin-bottom: 30px
+        position: relative
+        .line
+          width: 715px
+          height: 10px
+          margin: 0 auto 
+          background: #ff94c6
+        .image
+          position: absolute
+          top: -47px
+          right: 60px
+      .sub
+        font-size: 22px
+    .share
+      margin: 0
+      padding: 0
+      position: absolute
+      bottom: 35px
+      right: 60px
+      .share-item
+        display: inline-block
+        list-style: none
+        .share-link
+          padding: 5px 15px
+          display: block
+          font-size: 13px
+          text-decoration: none
+          border-radius: 10px
+          background: #000
+          color: #fff
+        .facebook:hover
+          background: #3b5998
+        .google:hover
+          background: #dd4b39
+        .twitter:hover
+          background: #1da1f2
+        .line:hover
+          background: #00c300
+  .banner-bottom
+    height: 350px
+    position: relative
+    background-position: center
+    -moz-background-size: cover
+    -webkit-background-size: cover
+    -o-background-size: cover
+    background-size: cover  
+    .content
+      width: 100%
+      height: 350px
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      background: rgba(0, 0, 0, 0.6)  
+      .font
+        p    
+          margin-bottom: 25px
+          font-size: 18px
+          color: #fff
+        p:last-child
+          margin-bottom: 0
+  .product
+    padding: 100px 0
+    display: flex
+    align-items: center
+    justify-content: center
+    background-position: center
+    -moz-background-size: cover
+    -webkit-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    .container
+      .float-left
+        float: left
+      .float-right
+        float: right
+      .text-left  
+        text-align: left
+      .text-right  
+        text-align: right
+      .image-left
+        position: relative
+        .product-image
+          position: absolute
+          top: -30px
+          right: -40px
+        .name-image
+          position: absolute
+          top: 15px
+          left: -20px
+      .image-right
+        position: relative
+        .product-image
+          position: absolute
+          top: -30px
+          left: -40px
+        .name-image
+          position: absolute
+          bottom: 45px
+          right: -20px
+      .font
+        color: #fff
+        .title
+          margin-bottom: 20px
+          font-size: 45px
+        .price
+          margin-bottom: 15px
+          font-size: 24px
+          .size
+            margin-left: 25px
+            font-size: 18px
+        .line
+          width: 50px
+          height: 4px
+          margin-bottom: 65px
+        .content
+          margin-bottom: 50px
+          font-size: 24px
+        .button
+          padding: 15px 30px
+          font-size: 16px
+          text-decoration: none
+          color: #fff
+          .glyphicon-menu-right
+            margin-left: 15px
+            font-size: 14px
+      .font-right
+        padding-left: 80px
+        .line
+          background: #ff94c6
+        .button
+          border: 1px solid #ff94c6
+        .button:hover
+          background: #ff94c6
+      .font-left
+        padding-right: 80px
+        .line
+          margin-left: auto
+          margin-right: 0
+          background: #79d9d5
+        .button
+          border: 1px solid #79d9d5
+        .button:hover
+          background: #79d9d5
+  .other
+    padding: 65px
+    display: flex
+    align-items: center
+    justify-content: center 
+    background: #000
+    .button       
+      padding: 15px 50px
+      font-size: 16px
+      text-decoration: none
+      border: 1px solid #fff
+      color: #fff
+    .button:hover
+      background: #fff
+      color: #2a2a2a
+  .customization  
+    padding: 150px 0  
+    background-position: center
+    -moz-background-size: cover
+    -webkit-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    .container
+      padding: 0
+      .exclusive-page
+        width: 70%
+        margin: 0 auto
+        margin-bottom: 100px
+        .block
+          padding: 50px 0
+          text-align: center
+          background: #fff
+          color: #2a2a2a
+          .title
+            margin-bottom: 15px
+            h1
+              font-size: 33px
+          .line
+            width: 300px
+            height: 4px
+            margin: 0 auto
+            margin-bottom: 55px
+            background: #79d9d5
+          .content
+            p
+              margin-bottom: 35px
+              font-size: 16px
+            p:last-child
+              margin-bottom: 0
+        .more
+          padding: 28px 0
+          display: block
+          font-size: 16px
+          text-align: center
+          background: #79d9d5
+          .button
+            text-decoration: none
+            color: #fff
+            .glyphicon-menu-right
+              width: 0
+              font-size: 14px
+              position: relative
+              right: -1.5em
+              opacity: 0
+              -moz-transition: all 0.2s ease-in-out
+              -o-transition: all 0.2s ease-in-out
+              -webkit-transition: all 0.2s ease-in-out
+              transition: all 0.2s ease-in-out
+          .button:hover
+            .glyphicon-menu-right
+              width: 1em
+              opacity: 1
+      .festival-advisory
+        .advisory-all
+          overflow: auto
+          text-align: center
+          color: #fff
+          .advisory-block
+            padding: 15px 0
+            border-left: 1px solid #d6d6d6
+            .title
+              margin: 0 0 30px 0
+              font-size: 24px
+            .content
+              margin-bottom: 20px
+              font-size: 13px
+            .contact
+              font-size: 18px
+              color: #79d9d5
+              .button
+                padding: 10px 30px
+                outline: none
+                text-decoration: none
+                font-size: 14px
+                border: 1px solid #79d9d5
+                color: #fff  
+                -moz-transition: all 0.4s ease-in-out
+                -o-transition: all 0.4s ease-in-out
+                -webkit-transition: all 0.4s ease-in-out
+                transition: all 0.4s ease-in-out
+              .button:hover
+                background: #79d9d5
+                color: #2a2a2a  
+          .advisory-block:first-child
+            border-left: none      
+@media screen and (max-width: 1200px)   
+  .festival
+    .product
+      .container
+        .image-left,.image-right
+          .box
+            width: 95%
+          .product-image
+            width: 90% 
+        .image-left
+          .name-image
+            left: 0
+        .image-right
+          .name-image
+            right: 0
+        .font
+          .title
+            font-size: 35px
+          .price
+            font-size: 20px
+            .size
+              font-size: 16px
+          .line
+            margin-bottom: 35px
+          .content
+            margin-bottom: 30px
+            font-size: 18px
+          .button
+            padding: 10px 20px
+@media screen and (max-width: $width-pad)             
+  .festival
+    .banner-top
+      height: 550px
+    .banner-bottom
+      height: 250px
+      .content
+        height: 250px
+    .product
+      .container
+        .image-left,.image-right
+          .name-image
+            width: 150px      
+@media screen and (max-width: 760px) 
+  .festival
+    .banner-top
+      .content
+        .title-english
+          .font-image
+            width: 95%
+        .title
+          margin-bottom: 60px
+        .limited
+          margin-bottom: 60px
+          .line
+            width: 95%
+          .image
+            width: 84px  
+            top: -37px
+    .banner-bottom
+      .content
+        .font
+          p    
+            margin-bottom: 10px
+            font-size: 14px
+            line-height: 25px
+    .product
+      padding: 60px 0
+      .container
+        .image-left,.image-right
+          width: 60%
+          margin: 30px 0
+          float: none
+        .image-right
+          text-align: right
+          .product-image
+            left: 0
+          .name-image
+            bottom: 15px
+            right: -40px
+        .font
+          width: 100%
+          padding: 0
+          float: none
+          text-align: left
+          .line
+            margin-left: 0
+    .customization  
+      padding: 80px 0
+@media screen and (max-width: 600px)
+  .festival
+    .product
+      .container
+        .image-left,.image-right
+          width: 70%
+          margin: 40px 0
+    .customization  
+      .container
+        .exclusive-page
+          width: 90%
+@media screen and (max-width: $width-phone)  
+  .festival
+    .banner-top
+      .content
+        .title
+          font-size: 30px
+      .share
+        right: 0
+        .share-item
+          .share-link
+            padding: 5px
+            font-size: 12px
+    .banner-bottom
+      .content
+        .font
+          p    
+            padding: 0 30px
+    .product
+      .container
+        .image-left,.image-right
+          width: 80%
+          margin: 40px 0
+          .name-image
+            width: 100px 
+    .other
+      padding: 45px
+      .button       
+        padding: 15px 30px           
+    .customization 
+      padding: 60px 0 
+      .container
+        .exclusive-page
+          margin-bottom: 50px
+          .block
+            .title
+              h1
+                font-size: 25px
+            .line
+              width: 80%
+            .content
+              padding: 0 20px
+              p
+                font-size: 14px
+        .festival-advisory
+          .advisory-all
+            .advisory-block
+              width: 100%
+              margin-bottom: 40px
+              border-left: none               
+            .advisory-block:last-child
+              margin-bottom: 0
+
+
+//404Banner
+.banner404
+  width: 100%
+  height: 540px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-repeat: no-repeat
+  background-position: center bottom
+  -moz-background-size: cover
+  -webkit-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  .content
+    text-align: center
+    color: #fff
+    .title
+      letter-spacing: 3px
+      font-size: 130px
+    .title-english
+      margin-bottom: 55px
+      font-size: 22px
+    .button
+      padding: 15px 30px
+      outline: none
+      text-decoration: none
+      font-size: 14px
+      border-radius: 50px
+      border: 1px solid #dabb2d
+      color: #dabb2d  
+      -moz-transition: all 0.4s ease-in-out
+      -o-transition: all 0.4s ease-in-out
+      -webkit-transition: all 0.4s ease-in-out
+      transition: all 0.4s ease-in-out
+    .button:hover
+      background: #dabb2d
+      color: #fff  
+@media screen and (max-width: $width-pad)
+  .banner404
+    height: 420px
+    .content
+      .title-english
+        margin-bottom: 30px
+@media screen and (max-width: $width-phone)
+  .banner404
+    height: 300px 
+    .content
+      .title
+        font-size: 90px
+      .title-english
+        font-size: 15px
+
+
+//404
+.page404
+  padding-bottom: 70px
+  .container
+    .recommend
+      width: 900px
+      margin: -65px auto 65px auto 
+      .tophead
+        padding: 20px 0
+        font-size: 18px
+        text-align: center
+        background: #2a2a2a
+        color: #fff
+      .product-list
+        position: relative
+        .products
+          width: 100%
+          padding: 0
+          .product
+            padding: 0
+            list-style: none
+            .product-image
+              width: 300px
+              height: 300px
+            a
+              padding-bottom: 20px
+              display: block
+              text-decoration: none
+              color: #2a2a2a
+              h2
+                padding: 20px
+                margin: 0 
+                font-size: 16px
+              .price
+                padding: 20px
+                font-size: 14px
+            .product-buttons
+              display: none
+          .product:hover
+            box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1) inset
+        .prev,.next
+          width: 38px
+          height: 38px
+          position: absolute
+          top: calc(50% - 20px)
+          display: flex
+          align-items: center
+          justify-content: center
+          text-align: center
+          border-radius: 50%
+          font-size: 40px
+          cursor: pointer
+          background: #fff
+          color: #adbd45
+        .prev:hover,.next:hover
+          background: #adbd45
+          color: #fff
+        .prev
+          left: -100px
+        .next
+          right: -100px
+    .more
+      text-align: center
+      .button
+        padding: 10px 30px
+        outline: none
+        text-decoration: none
+        font-size: 14px
+        border-radius: 50px
+        border: 1px solid #adbd45
+        color: #adbd45  
+        -moz-transition: all 0.4s ease-in-out
+        -o-transition: all 0.4s ease-in-out
+        -webkit-transition: all 0.4s ease-in-out
+        transition: all 0.4s ease-in-out
+      .button:hover
+        background: #adbd45
+        color: #fff  
+@media screen and (max-width: 1200px)
+  .page404
+    .container
+      .recommend
+        width: 600px
+@media screen and (max-width: $width-pad)
+  .page404
+    .container
+      .recommend
+        margin: 0 auto 65px auto 
+        .product-list
+          .prev,.next
+            display: none
+@media screen and (max-width: 700px)
+  .page404
+    .container
+      padding: 0
+      .recommend
+        width: 300px
+
+
+//搜尋結果頁面
+.search-banner
+  width: 100%
+  height: 300px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-repeat: no-repeat
+  background-position: center
+  -moz-background-size: cover
+  -webkit-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  .content
+    text-align: center
+    color: #fff
+    .title
+      margin-bottom: 15px
+      letter-spacing: 3px
+      font-size: 33px
+
+
+.search-list
+  padding-bottom: 60px
+  .content
+    margin-top: 80px 
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+    .list-item
+      padding: 15px 0
+      overflow: auto
+      display: flex
+      align-items: center
+      justify-content: center
+      border-bottom: 1px solid #d6d6d6
+      .list-content-block
+        float: left      
+      .time
+        width: 120px
+        padding: 0
+        text-align: center
+        .year
+          margin-bottom: 10px
+          font-size: 22px
+          color: #aaba3d
+        .date
+          letter-spacing: 2px
+          font-size: 16px
+          color: #898989
+      .list-content
+        width: calc(100% - 230px)
+        padding-left: 50px
+        color: #2a2a2a
+        .list-title
+          font-size: 20px
+          overflow: hidden
+          white-space: nowrap
+          text-overflow: ellipsis
+          .title-link
+            text-decoration: none
+            color: #2a2a2a
+      .arrow
+        padding: 0 30px
+        float: right
+        text-align: center
+        font-size: 30px
+        .arrow-link
+          color: #aaba3d
+    .list-item:hover
+      box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1)
+@media screen and (max-width: $width-phone)
+  .search-list
+    .content
+      .list-item 
+        display: block
+        .time
+          width: 120px
+          margin-bottom: 30px
+        .list-content
+          width: calc(100% - 50px)
+          padding-left: 20px
+        .arrow
+          padding: 0 10px
+
